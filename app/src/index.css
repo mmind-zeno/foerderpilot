@@ -3,14 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    box-sizing: border-box;
-  }
+  * { box-sizing: border-box; }
 
   body {
     margin: 0;
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-    background-color: #F8F7F4;
+    background-color: #F5F3EF;
     color: #1A1A1A;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -22,18 +20,54 @@
 }
 
 @layer utilities {
+  /* Shimmer skeleton */
   .shimmer-bg {
     background: linear-gradient(90deg, #EAE8E4 25%, #F0EEE9 50%, #EAE8E4 75%);
     background-size: 200% 100%;
     animation: shimmer 1.5s linear infinite;
   }
 
+  /* Staggered animations */
   .stagger-1 { animation-delay: 0ms; }
   .stagger-2 { animation-delay: 80ms; }
   .stagger-3 { animation-delay: 160ms; }
   .stagger-4 { animation-delay: 240ms; }
   .stagger-5 { animation-delay: 320ms; }
   .stagger-6 { animation-delay: 400ms; }
+
+  /* Hero text carousel */
+  .hero-text-item {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: heroTextCycle 20s infinite;
+  }
+  .hero-text-item:nth-child(1) { animation-delay: 0s; }
+  .hero-text-item:nth-child(2) { animation-delay: 4s; }
+  .hero-text-item:nth-child(3) { animation-delay: 8s; }
+  .hero-text-item:nth-child(4) { animation-delay: 12s; }
+  .hero-text-item:nth-child(5) { animation-delay: 16s; }
+
+  @keyframes heroTextCycle {
+    0%     { opacity: 0; transform: translateY(12px); }
+    5%     { opacity: 1; transform: translateY(0); }
+    18%    { opacity: 1; transform: translateY(0); }
+    23%    { opacity: 0; transform: translateY(-10px); }
+    100%   { opacity: 0; transform: translateY(0); }
+  }
+
+  /* Card hover lift */
+  .card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(13, 79, 107, 0.10);
+  }
 
   .line-clamp-3 {
     display: -webkit-box;

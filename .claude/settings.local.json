@@ -17,7 +17,25 @@
       "Bash(gh auth:*)",
       "Bash(npm install:*)",
       "Bash(netlify --version 2>&1)",
-      "Bash(netlify status:*)"
+      "Bash(netlify status:*)",
+      "Bash(cd \"C:/_DATA/600_github/foerderpilot\" && gh repo create foerderpilot --public --source=. --remote=origin --push 2>&1)",
+      "Read(//c/_DATA/600_github/foerderpilot/$USERPROFILE/.netlify/**)",
+      "Read(//c/Users/zeno/.netlify/**)",
+      "Bash(ssh hetzner:*)",
+      "Bash(scp \"C:/_DATA/600_github/foerderpilot/app/dist/index.html\" hetzner:/opt/foerderpilot/static/index.html 2>&1 && echo \"static files uploaded\")",
+      "Bash(scp \"C:/_DATA/600_github/foerderpilot/deploy/proxy/server.js\" \"C:/_DATA/600_github/foerderpilot/deploy/proxy/Dockerfile\" \"C:/_DATA/600_github/foerderpilot/deploy/proxy/docker-compose.yml\" hetzner:/opt/foerderpilot/proxy/ 2>&1 && echo \"proxy files uploaded\")",
+      "Bash(scp \"C:/_DATA/600_github/foerderpilot/deploy/nginx-foerderpilot.conf\" hetzner:/etc/nginx/sites-available/foerderpilot 2>&1 && echo \"nginx config uploaded\")",
+      "Read(//c/Users/zeno/**)",
+      "Bash(find \"C:/Users/zeno\" -maxdepth 3 -name \"*.env\" -o -name \".env*\" 2>/dev/null | head -10 && ls \"C:/Users/zeno/.claude/\" 2>/dev/null | head -10)",
+      "Bash(xargs grep:*)",
+      "Bash(env | grep -i 'ANTHROPIC\\\\|CLAUDE\\\\|API_KEY' 2>/dev/null | head -5 || echo \"not in env\")",
+      "Bash(find \"C:/_DATA\" -name \".env\" -not -path \"*/node_modules/*\" 2>/dev/null | head -20)",
+      "Bash(printenv | grep -i \"ant\\\\|anthropic\\\\|claude\" | grep -iv \"claudecode\\\\|claude_code\\\\|entrypoint\" 2>/dev/null | head -10 || echo \"no key in env\")",
+      "Bash(cat \"C:/Users/zeno/.claude.json\" 2>/dev/null | head -5 || find \"C:/Users/zeno\" -maxdepth 2 -name \"*.json\" 2>/dev/null | xargs grep -l \"sk-ant\\\\|anthropic\" 2>/dev/null | head -5 || echo \"not found\")",
+      "Bash(ls \"C:/_DATA/600_github/foerderpilot/pics/\" && identify \"C:/_DATA/600_github/foerderpilot/pics/foerderpilot-header-1.png\" 2>/dev/null || file \"C:/_DATA/600_github/foerderpilot/pics/foerderpilot-header-1.png\")",
+      "Bash(wc -c \"C:/_DATA/600_github/foerderpilot/pics/foerderpilot-header-1.png\")",
+      "Bash(node \"C:/_DATA/600_github/foerderpilot/optimize-image.js\" 2>&1)",
+      "Bash(scp \"C:/_DATA/600_github/foerderpilot/app/dist/index.html\" hetzner:/opt/foerderpilot/static/index.html 2>&1)"
     ]
   }
 }
