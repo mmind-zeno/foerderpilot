@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const fs=require\\('fs'\\);const data=JSON.parse\\(fs.readFileSync\\('C:/_DATA/600_github/foerderpilot/vorlage/foerderungen_data.json','utf8'\\)\\);console.log\\('Anzahl:',data.length\\);console.log\\('Felder:',Object.keys\\(data[0]\\).join\\(', '\\)\\);const cats=[...new Set\\(data.map\\(d=>d.kategorie\\)\\)].sort\\(\\);console.log\\('Kategorien \\('+cats.length+'\\):\\\\\\\\n'+cats.join\\('\\\\\\\\n'\\)\\);const zgs=[...new Set\\(data.flatMap\\(d=>d.zielgruppe\\)\\)].sort\\(\\);console.log\\('Zielgruppen \\('+zgs.length+'\\):\\\\\\\\n'+zgs.join\\('\\\\\\\\n'\\)\\);const ft=[...new Set\\(data.map\\(d=>d.frist_typ\\)\\)].sort\\(\\);console.log\\('Fristtypen:',ft.join\\(', '\\)\\);const noMax=data.filter\\(d=>d.foerderumfang_max_chf===null\\).length;console.log\\('foerderumfang_max_chf=null:',noMax,'/',data.length\\);const ids=data.map\\(d=>d.id\\);const dup=ids.filter\\(\\(id,i\\)=>ids.indexOf\\(id\\)!==i\\);console.log\\('Doppelte IDs:',dup.length===0?'keine':dup.join\\(', '\\)\\);\")",
+      "Bash(node \"C:/_DATA/600_github/foerderpilot/analyze.js\")",
+      "Bash(cd \"C:/_DATA/600_github/foerderpilot\" && npm create vite@latest app -- --template react-ts 2>&1)",
+      "Bash(cd \"C:/_DATA/600_github/foerderpilot/app\" && npm install 2>&1 | tail -5)",
+      "Bash(cd \"C:/_DATA/600_github/foerderpilot/app\" && npm install -D tailwindcss@3 postcss autoprefixer vite-plugin-singlefile 2>&1 | tail -5)",
+      "Bash(cd \"C:/_DATA/600_github/foerderpilot/app\" && npm install -D tailwindcss@3 postcss autoprefixer 2>&1 | tail -5 && npm install -D vite-plugin-singlefile 2>&1 | tail -5)",
+      "Read(//c/Users/zeno/AppData/Local/npm-cache/_logs/**)",
+      "Bash(cd \"C:/_DATA/600_github/foerderpilot/app\" && npm install -D vite-plugin-singlefile --legacy-peer-deps 2>&1 | tail -8)",
+      "Bash(cd \"C:/_DATA/600_github/foerderpilot/app\" && npx tailwindcss init -p 2>&1)",
+      "Bash(cd \"C:/_DATA/600_github/foerderpilot/app\" && npm run build 2>&1)",
+      "Bash(cd \"C:/_DATA/600_github/foerderpilot/app\" && npm run build 2>&1 && cp dist/index.html ../bundle.html && echo \"bundle.html erstellt\")",
+      "Bash(wc -c \"C:/_DATA/600_github/foerderpilot/bundle.html\" && echo \"Bytes\")",
+      "Bash(netlify --version 2>/dev/null && echo \"netlify:ok\" || echo \"netlify:missing\"\ngh --version 2>/dev/null | head -1 && echo \"gh:ok\" || echo \"gh:missing\"\ngit --version 2>/dev/null && echo \"git:ok\" || echo \"git:missing\"\nnode --version && npm --version)",
+      "Bash(gh auth:*)",
+      "Bash(npm install:*)",
+      "Bash(netlify --version 2>&1)",
+      "Bash(netlify status:*)"
+    ]
+  }
+}
