@@ -12,6 +12,10 @@ export interface Foerderung {
   bedingungen: string
   website: string
   tags: string[]
+  // Enriched fields (optional, from research)
+  kontakt_email?: string | null
+  kontakt_tel?: string | null
+  antrag_url?: string | null
 }
 
 export interface FoerderungMatch {
