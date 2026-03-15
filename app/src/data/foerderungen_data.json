@@ -13,14 +13,17 @@
     "foerderumfang_max_chf": 10000,
     "antragsfrist": "Laufend, solange Budget vorhanden (ab März 2025 beantragbar)",
     "frist_typ": "laufend",
-    "bedingungen": "Kooperation mit anerkannter Forschungseinrichtung erforderlich. WICHTIG: Pro Unternehmen und Jahr kann entweder ein Innovations- ODER ein Exportscheck beantragt werden – nicht beide! Budget CHF 400'000 pro Jahr, Vergabe nach Eingangsprinzip.",
+    "bedingungen": "KMU mit max. 250 Mitarbeitenden und Jahresumsatz bis CHF 50 Mio., Sitz in Liechtenstein. Zwingend: Kooperation mit einer anerkannten Forschungseinrichtung (z.B. Universität Liechtenstein, Schweizer FH, Technologieinstitut). Gefördert werden externe F&E-Kosten: Laboranalysen, Prototypenentwicklung, Machbarkeitsstudien, technische Gutachten. WICHTIG: Pro Unternehmen und Kalenderjahr kann entweder der Innovations- ODER der Exportscheck beantragt werden – nicht beide kombinierbar! Jahresbudget CHF 400'000; Vergabe nach Eingangsprinzip (First come, first served). Antrag online beim Amt für Volkswirtschaft einreichen. Budget ab März 2025 verfügbar.",
     "website": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/forschung-und-innovation",
     "tags": [
       "innovation",
       "KMU",
       "forschung",
       "kooperation"
-    ]
+    ],
+    "kontakt_email": "info.avw@llv.li",
+    "kontakt_tel": "+423 236 68 71",
+    "antrag_url": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/forschung-und-innovation"
   },
   {
     "id": 2,
@@ -32,18 +35,21 @@
       "Unternehmen"
     ],
     "zielgruppe_text": "KMU in Liechtenstein (max. 250 Mitarbeitende)",
-    "foerderumfang": "Variabel je nach Modul: Konzept, Training oder Investition",
+    "foerderumfang": "Modulbezogen: Konzept (Analyse & Strategie), Investition (Software, Hardware), Training (Mitarbeiterschulung)",
     "foerderumfang_max_chf": null,
     "antragsfrist": "Ganzjährig, solange Budget vorhanden",
     "frist_typ": "laufend",
-    "bedingungen": "Digitalisierungsprojekt mit messbarem Mehrwert. Drei Phasen: Konzept, Invest, Training. Antrag via Online-Portal beim Amt für Volkswirtschaft.",
+    "bedingungen": "KMU mit Sitz in Liechtenstein, max. 250 Mitarbeitende. Drei förderfähige Module: (1) Konzept-Modul – Erstellung einer Digitalisierungsstrategie durch externe Beratung; (2) Investitions-Modul – Anschaffung von digitaler Software oder Hardware mit konkretem betrieblichem Mehrwert; (3) Training-Modul – Schulung von Mitarbeitenden für neue digitale Werkzeuge. Jedes Modul kann unabhängig beantragt werden. Projektziel und messbarer Nutzen müssen im Antrag dargelegt werden. Antrag beim Amt für Volkswirtschaft per Online-Portal.",
     "website": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/forschung-und-innovation",
     "tags": [
       "digitalisierung",
       "KMU",
       "innovation",
       "AI"
-    ]
+    ],
+    "kontakt_email": "info.avw@llv.li",
+    "kontakt_tel": "+423 236 68 71",
+    "antrag_url": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/forschung-und-innovation"
   },
   {
     "id": 3,
@@ -58,14 +64,17 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Laufend, solange Budget vorhanden",
     "frist_typ": "laufend",
-    "bedingungen": "Konkretes Exportprojekt oder Leitmessebesuch (jede Messe einmalig förderbar). WICHTIG: Pro Unternehmen und Jahr kann entweder ein Innovations- ODER ein Exportscheck beantragt werden – nicht beide! Liechtenstein hat Rahmenvertrag mit Switzerland Global Enterprise (S-GE). Gesamtjahresbudget CHF 400'000.",
+    "bedingungen": "KMU mit Sitz in Liechtenstein, max. 250 Mitarbeitende. Förderfähig: konkrete Exportprojekte (Markteintritt, Exportstrategie, Erstberatung) und Leitmessebesuche (jede Messe pro Unternehmen einmalig förderbar). Liechtenstein hat Rahmenvertrag mit Switzerland Global Enterprise (S-GE) – Exportberatung und Netzwerkzugang inklusive. Gesamtjahresbudget CHF 400'000; First-come-first-served. WICHTIG: Pro Unternehmen und Jahr entweder Exportscheck ODER Innovationsscheck – keine Kombination möglich. Antrag vor Beginn der Exportmassnahme einreichen.",
     "website": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/exportscheck",
     "tags": [
       "export",
       "internationalisierung",
       "KMU",
       "messe"
-    ]
+    ],
+    "kontakt_email": "info.avw@llv.li",
+    "kontakt_tel": "+423 236 68 71",
+    "antrag_url": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/exportscheck"
   },
   {
     "id": 4,
@@ -81,14 +90,17 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Jährlich",
     "frist_typ": "jährlich",
-    "bedingungen": "Kooperation mit Schweizer Forschungspartner erforderlich",
+    "bedingungen": "Liechtensteinische Unternehmen haben seit 2016 uneingeschränkten Zugang zu Innosuisse (früher KTI). Voraussetzung: Forschungspartner ist eine anerkannte Forschungseinrichtung in der Schweiz oder Liechtenstein (Universität, FH, ETH, PSI etc.). Innosuisse übernimmt die Forschungskosten beim Forschungspartner; das Unternehmen trägt seine eigenen Kosten selbst. Typische Projektlaufzeit: 1–3 Jahre. Projektantrag wird gemeinsam mit dem Forschungspartner eingereicht. Nationale Kontaktstelle (NKS) für FL: Amt für Volkswirtschaft. Antragsberatung dringend empfohlen.",
     "website": "https://www.innosuisse.ch",
     "tags": [
       "forschung",
       "innovation",
       "kooperation",
       "schweiz"
-    ]
+    ],
+    "kontakt_email": "info.avw@llv.li",
+    "kontakt_tel": "+423 236 68 71",
+    "antrag_url": "https://www.innosuisse.admin.ch/en"
   },
   {
     "id": 5,
@@ -104,13 +116,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Jährlich",
     "frist_typ": "jährlich",
-    "bedingungen": "Affiliation zur Universität Liechtenstein erforderlich",
+    "bedingungen": "Ausschliesslich für Forschende und Doktorierende der Universität Liechtenstein. Affiliation zur Universität zwingend. Projekte müssen zu den strategischen Forschungsschwerpunkten der Universität passen (Architektur, Wirtschaftsinformatik, Betriebswirtschaft, Recht). Antragstellung intern; Entscheid durch universitäre Forschungskommission. 2024 wurden 41 Projekte gefördert. Wichtig: Externe Bewerber ohne Uni-LI-Affiliation sind nicht antragsberechtigt.",
     "website": "https://www.uni.li/de/forschung/forschungsfoerderung/foerderinstrumente",
     "tags": [
       "forschung",
       "universität",
       "wissenschaft"
-    ]
+    ],
+    "kontakt_email": "info@uni.li",
+    "kontakt_tel": "+423 265 12 00",
+    "antrag_url": "https://www.uni.li/de/forschung/forschungsfoerderung/foerderinstrumente"
   },
   {
     "id": 6,
@@ -123,18 +138,21 @@
       "Organisationen"
     ],
     "zielgruppe_text": "Institutionen, Unternehmen, Organisationen",
-    "foerderumfang": "Projektbezogen (hohe Förderquoten)",
+    "foerderumfang": "Projektbezogen; Förderquoten bis 85% der förderfähigen Kosten",
     "foerderumfang_max_chf": null,
     "antragsfrist": "Periodisch (2-3 Jahre Zyklen)",
     "frist_typ": "periodisch",
-    "bedingungen": "Fokus auf Bildung und Kultur in Liechtenstein",
+    "bedingungen": "EEA Grants sind EU/EEA-Fördermittel (finanziert von Norwegen, Island und Liechtenstein) für EU-Mitgliedstaaten und Liechtenstein. Programmperiode 2021–2028. Förderbereiche: Kultur, Bildung, Zivilgesellschaft, Forschung, Umwelt. Partner aus Geberland (Norwegen, Island oder FL) zwingend. Hohe bürokratische Anforderungen; professionelles Projektmanagement erforderlich. Anträge über nationale Verwaltungseinheiten (je nach Bereich). Beratung bei Universität Liechtenstein.",
     "website": "https://www.uni.li/de/forschung/forschungsfoerderung/foerderinstrumente",
     "tags": [
       "international",
       "EEA",
       "bildung",
       "kultur"
-    ]
+    ],
+    "kontakt_email": "info@uni.li",
+    "kontakt_tel": "+423 265 12 00",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/amt-fuer-kultur/kulturschaffen/eea-grants"
   },
   {
     "id": 7,
@@ -150,14 +168,17 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Jährlich (meist Dezember)",
     "frist_typ": "jährlich",
-    "bedingungen": "Internationale Partnerschaften erforderlich",
+    "bedingungen": "EU-Programm für Bildung, Jugend und Sport (2021–2027). Förderbereiche: KA1 Lernmobilität (Auslandsaufenthalte), KA2 Kooperationsprojekte (Partnerschaften zwischen Institutionen), KA3 Politikunterstützung. Antragstellung jährlich (Fristen je nach Aktion: meist Februar/März für KA2). Offene für Schulen, Hochschulen, Berufsbildung, Erwachsenenbildung, Jugendorganisationen. Liechtenstein nimmt als EWR-Mitglied vollständig teil. Nationale Kontaktstelle: Universität Liechtenstein. Anträge auf Englisch.",
     "website": "https://www.uni.li/de/forschung/forschungsfoerderung/foerderinstrumente",
     "tags": [
       "international",
       "EU",
       "bildung",
       "mobilität"
-    ]
+    ],
+    "kontakt_email": "info@uni.li",
+    "kontakt_tel": "+423 265 12 00",
+    "antrag_url": "https://erasmus.uni.li"
   },
   {
     "id": 8,
@@ -172,13 +193,16 @@
     "foerderumfang_max_chf": 1000000,
     "antragsfrist": "Mehrmals jährlich",
     "frist_typ": "mehrmals jährlich",
-    "bedingungen": "Hochwertige Forschung, Peer-Review erforderlich",
+    "bedingungen": "Liechtensteinische Forschende können SNF-Förderung beantragen, sofern sie an einer anerkannten Institution (Universität LI, Schweizer Hochschule etc.) affiliiert sind. Wichtigste Fördertypen: Projektförderung (CHF 50'000–1 Mio.+), Ambizione (Nachwuchsforschende), PRIMA (Frauen), Sinergia (interdisziplinär). Antragssprachen: Deutsch, Französisch, Englisch. Peer-Review-Verfahren; Bearbeitungszeit 4–6 Monate. Kosten: Personal, Sachmittel, Reisen, indir. Kosten. Anmeldung über mySNF-Portal. Vorab persönliche Förderberatung bei SNF empfohlen.",
     "website": "https://www.snf.ch",
     "tags": [
       "forschung",
       "wissenschaft",
       "schweiz"
-    ]
+    ],
+    "kontakt_email": "info@snf.ch",
+    "kontakt_tel": "+41 31 308 22 22",
+    "antrag_url": "https://www.snf.ch/de/foerderung/foerderportfolio"
   },
   {
     "id": 9,
@@ -193,13 +217,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Mehrmals jährlich",
     "frist_typ": "mehrmals jährlich",
-    "bedingungen": "Wissenschaftliche Exzellenz erforderlich",
+    "bedingungen": "Österreichischer Wissenschaftsfonds (FWF); zugänglich für FL-Forschende mit institutioneller Affiliation. Fördertypen: Einzelprojekte (ab EUR 50'000), START-Programm (Nachwuchs), internationale Joint Projects. Alle Disziplinen förderbar. Peer-Review-basiert; strenge Qualitätsanforderungen. Antragssprachen: Deutsch oder Englisch. Bearbeitungszeit: 4–6 Monate. Online-Antragstellung über ELANE-Portal. Besonderheit: FWF legt Forschungsergebnisse Open Access frei.",
     "website": "https://www.fwf.ac.at",
     "tags": [
       "forschung",
       "wissenschaft",
       "österreich"
-    ]
+    ],
+    "kontakt_email": "office@fwf.ac.at",
+    "kontakt_tel": "+43 1 5056740",
+    "antrag_url": "https://www.fwf.ac.at/de/forschungsfoerderung/antragstellung"
   },
   {
     "id": 10,
@@ -215,14 +242,17 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Periodisch",
     "frist_typ": "periodisch",
-    "bedingungen": "Kooperation zwischen mindestens 2 Ländern erforderlich",
+    "bedingungen": "Wissenschaftsverbund der Vierländerregion Bodensee (Deutschland, Österreich, Schweiz, Liechtenstein, Fürstentum). Kooperationsforschung zwischen mindestens zwei Institutionen aus verschiedenen Ländern der Bodenseeregion. Periodische Ausschreibungen; Fokus auf angewandte und interdisziplinäre Forschung mit regionalem Bezug. Antragskoordination über Universität Liechtenstein oder direkt über IBK.",
     "website": "https://www.uni.li",
     "tags": [
       "forschung",
       "bodensee",
       "international",
       "kooperation"
-    ]
+    ],
+    "kontakt_email": "info@uni.li",
+    "kontakt_tel": "+423 265 12 00",
+    "antrag_url": "https://www.bodenseekonferenz.org"
   },
   {
     "id": 11,
@@ -238,13 +268,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Direkter Zugang",
     "frist_typ": "laufend",
-    "bedingungen": "Teilweise Mitgliedschaft erforderlich",
+    "bedingungen": "Wirtschaftskammer Liechtenstein (WKL) bietet KMU und Unternehmern vielfältige Unterstützung: kostenlose Erstberatung zu Unternehmensgründung, Arbeitsrecht, Steuerrecht, Exportfragen. Mitglieder profitieren von vergünstigten Fachberatungen, Weiterbildungen und Netzwerkveranstaltungen. Mitgliedschaft für Gewerbebetriebe in Liechtenstein (Jahresbeitrag ab CHF 350). Öffnungszeiten: Mo–Do 08:00–11:30 und 13:30–16:30, Fr 08:00–11:30 und 13:30–16:00.",
     "website": "https://www.wirtschaftskammer.li",
     "tags": [
       "beratung",
       "KMU",
       "unternehmen"
-    ]
+    ],
+    "kontakt_email": "info@wirtschaftskammer.li",
+    "kontakt_tel": "+423 237 77 88",
+    "antrag_url": "https://wirtschaftskammer.li/"
   },
   {
     "id": 12,
@@ -259,13 +292,14 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Direkter Zugang",
     "frist_typ": "laufend",
-    "bedingungen": "Keine",
+    "bedingungen": "digihub.li ist eine unabhängige Förderberatungsplattform für liechtensteinische Unternehmen und Privatpersonen. Kostenloser Service: Übersicht über verfügbare Förderungen, individuelle Beratung zur Antragstellung, Identifikation der geeigneten Fördermittel. Kein formaler Antragsprozess erforderlich – einfach Kontakt aufnehmen. Besonders nützlich für Erstantragsteller ohne Erfahrung mit Förderprogrammen.",
     "website": "https://digihub.li/services/foerderberatung/",
     "tags": [
       "beratung",
       "digitalisierung",
       "kostenlos"
-    ]
+    ],
+    "antrag_url": "https://digihub.li/services/foerderberatung/"
   },
   {
     "id": 13,
@@ -280,13 +314,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Laufend",
     "frist_typ": "laufend",
-    "bedingungen": "Geschäftsidee mit Marktpotenzial",
+    "bedingungen": "Unterstützung für Jungunternehmer und Startups durch das Amt für Volkswirtschaft. Leistungen: Beratung zur Geschäftsidee, Finanzplanung, Marktanalyse, Vernetzung mit Investoren und Acceleratoren. Liechtenstein Business begleitet Ansiedlungen. Kein separater Förderungsbetrag – Wert liegt in professioneller Beratung und Netzwerkzugang. Ergänzend: Zugang zu Innosuisse, Innovationsscheck und EEA Grants möglich.",
     "website": "https://www.llv.li/de/unternehmen/finanzierung-foerderung",
     "tags": [
       "startup",
       "gründung",
       "innovation"
-    ]
+    ],
+    "kontakt_email": "info.avw@llv.li",
+    "kontakt_tel": "+423 236 68 71",
+    "antrag_url": "https://www.llv.li/de/unternehmen/finanzierung-foerderung"
   },
   {
     "id": 14,
@@ -302,14 +339,17 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Laufend",
     "frist_typ": "laufend",
-    "bedingungen": "Technologisches Projekt erforderlich",
+    "bedingungen": "Das Technologie- und Innovationszentrum an der Universität Liechtenstein bietet Startups und Innovatoren Infrastruktur (Büros, Labors, Meetingräume), Mentoring durch erfahrene Unternehmer und Wissenschaftler sowie Vernetzung mit dem Uni-Ökosystem. Besonders geeignet für technologie-orientierte Gründungen im Frühstadium. Bewerbung direkt bei der Universität.",
     "website": "https://www.uni.li",
     "tags": [
       "startup",
       "technologie",
       "infrastruktur",
       "mentoring"
-    ]
+    ],
+    "kontakt_email": "info@uni.li",
+    "kontakt_tel": "+423 265 12 00",
+    "antrag_url": "https://www.uni.li"
   },
   {
     "id": 15,
@@ -325,13 +365,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Unternehmen in Liechtenstein ansässig",
+    "bedingungen": "Das Amt für Volkswirtschaft vermittelt KMU und Unternehmen subventionierte externe Beratungsleistungen. Themen: Betriebsoptimierung, Organisationsentwicklung, Strategie, Nachfolgeplanung, HR. Unternehmen in Liechtenstein können vergünstigte Beratung zu einem Bruchteil der Marktpreise in Anspruch nehmen. Antragsprinzip: Antrag vor Beginn der Beratung stellen.",
     "website": "https://www.llv.li/de/unternehmen/finanzierung-foerderung",
     "tags": [
       "beratung",
       "unternehmen",
       "KMU"
-    ]
+    ],
+    "kontakt_email": "info.avw@llv.li",
+    "kontakt_tel": "+423 236 68 71",
+    "antrag_url": "https://www.llv.li/de/unternehmen/finanzierung-foerderung"
   },
   {
     "id": 16,
@@ -527,13 +570,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Periodisch",
     "frist_typ": "periodisch",
-    "bedingungen": "Fokus auf Biodiversität und Naturschutz",
+    "bedingungen": "Aktionsplan Biodiversität 2030+ des Amtes für Umwelt. Fördert Massnahmen zum Schutz und zur Förderung der Artenvielfalt: Anlage von Blumenwiesen, Hecken, Kleingewässern, Trockensteinmauern; ökologische Aufwertung von Landwirtschaftsflächen; Renaturierungsprojekte. Zielgruppen: Landwirte, Grundbesitzer, Naturschutzorganisationen, Gemeinden. Antragsformulare beim Amt für Umwelt. Projektbeschreibung und Kostenschätzung erforderlich.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/umwelt",
     "tags": [
       "biodiversität",
       "naturschutz",
       "umwelt"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/umwelt"
   },
   {
     "id": 24,
@@ -549,13 +595,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Wasserschutzprojekt erforderlich",
+    "bedingungen": "Förderung von Massnahmen zum Schutz der Gewässer und des Grundwassers. Förderfähig: Renaturierung von Bächen und Auen, Ufergehölzpflanzungen, Verbesserung der Wasserqualität, Anlage von Pufferzonen. Antrag beim Amt für Umwelt mit Projektbeschreibung, Lageplan und Kostenschätzung. Prüfung durch Fachstelle; Bewilligungsverfahren beachten.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/umwelt",
     "tags": [
       "wasser",
       "umwelt",
       "naturschutz"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/umwelt"
   },
   {
     "id": 25,
@@ -571,14 +620,17 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Nachhaltige Forstwirtschaft erforderlich",
+    "bedingungen": "Förderung nachhaltiger Forstwirtschaft für Waldbesitzer und Forstbetriebe. Förderfähig: Jungwaldpflege, Aufforstung, Waldwegebau, Schutzwaldpflege, waldbauliche Massnahmen. Waldwirtschaftsplan oder Betriebsplan Voraussetzung. Anträge vor Massnahmenbeginn beim Amt für Umwelt. Kombinierbar mit nationalen Förderprogrammen.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/umwelt",
     "tags": [
       "wald",
       "forstwirtschaft",
       "umwelt",
       "nachhaltigkeit"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/umwelt"
   },
   {
     "id": 26,
@@ -669,13 +721,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Künstlerische Qualität und Relevanz erforderlich",
+    "bedingungen": "Das Kunstmuseum Liechtenstein kooperiert mit Künstlern bei Ausstellungsprojekten und bietet Plattform für zeitgenössische und moderne Kunst. Keine offene Ausschreibung – Kurator entscheidet über Projekte und Einladungen. Für Anfragen: schriftliche Projektbeschreibung, Portfoliomappe, Ausstellungskonzept einreichen. Besonderheit: Kunstmuseum ist mit der Hilti Art Foundation im selben Gebäude (Städtle 32, Vaduz).",
     "website": "https://www.kunstmuseum.li/",
     "tags": [
       "kunst",
       "museum",
       "ausstellung"
-    ]
+    ],
+    "kontakt_email": "mail@kunstmuseum.li",
+    "kontakt_tel": "+423 235 03 00",
+    "antrag_url": "https://www.kunstmuseum.li"
   },
   {
     "id": 30,
@@ -713,13 +768,14 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf Medienvielfalt und kulturelle Inhalte",
+    "bedingungen": "Radio Liechtenstein ist der öffentliche Radiosender des Fürstentums. Unterstützt Kulturschaffende durch Sendeplätze, Berichte und Medienpartnerschaften bei Kulturprojekten. Kein direktes Fördergeld – Wert liegt in Medienpräsenz und Berichterstattung. Anfragen direkt an die Redaktion richten. Besonders für Kultur- und Musikveranstaltungen in Liechtenstein relevant.",
     "website": "https://www.radioliechtenstein.li/",
     "tags": [
       "medien",
       "radio",
       "kultur"
-    ]
+    ],
+    "kontakt_tel": "+423 236 06 10"
   },
   {
     "id": 32,
@@ -735,14 +791,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf soziale Wirkung und Gemeinschaftsengagement",
+    "bedingungen": "Die Hilti Foundation fördert Musikprojekte, die eine messbare soziale Wirkung erzielen (z.B. Musikpädagogik für benachteiligte Kinder, Gemeinschaftsprojekte, Inklusion durch Musik). Fokus auf Nachhaltigkeit und skalierbare Wirkungsmodelle. Keine offene Ausschreibung – strategische Partnerauswahl. Anfragen mit detailliertem Wirkungskonzept, Budget und Evaluationsplan einreichen. Internationalausgerichtet, mit Fokus auf Liechtenstein und die Region.",
     "website": "https://www.hiltifoundation.org/de",
     "tags": [
       "musik",
       "sozial",
       "stiftung",
       "hilti"
-    ]
+    ],
+    "kontakt_tel": "+423 234 3762",
+    "antrag_url": "https://www.hiltifoundation.org/what-we-do"
   },
   {
     "id": 33,
@@ -757,13 +815,15 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Kulturelle Exzellenz und Relevanz erforderlich",
+    "bedingungen": "Die Fürst Franz Josef von Liechtenstein Stiftung vergibt alle zwei Jahre den Fürst-Franz-Josef-von-Liechtenstein-Preis für herausragende kulturelle Leistungen (dotiert mit CHF 30'000). Für kulturelle Einzelprojekte: schriftliches Gesuch mit Projektbeschreibung, Biografie, Referenzen und Budget an die Stiftung. Fokus auf Kunst und Kultur mit liechtensteinischem Bezug. Keine offene jährliche Ausschreibung; Kontakt für Voranfrage empfohlen.",
     "website": "https://www.ffj-stiftung.li/",
     "tags": [
       "kultur",
       "stiftung",
       "kunst"
-    ]
+    ],
+    "kontakt_tel": "+423 265 30 03",
+    "antrag_url": "https://www.ffj-stiftung.li/"
   },
   {
     "id": 34,
@@ -779,13 +839,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf Erwachsenenbildung und Kulturvermittlung",
+    "bedingungen": "Erwachsenenbildung Liechtenstein (EB) fördert Weiterbildungsangebote und Kulturvermittlung für Erwachsene. Programme in Zusammenarbeit mit Schulen und Kulturinstitutionen. Subventionierte Kurs- und Seminarangebote; Teilnahmegebühren je nach Programm. Für Bildungseinrichtungen und Kulturorganisationen: Projektpartnerschaft anfragen. Jahresprogramm auf Website.",
     "website": "https://www.eb-liechtenstein.li/",
     "tags": [
       "bildung",
       "erwachsene",
       "kultur"
-    ]
+    ],
+    "kontakt_email": "info@eb-liechtenstein.li",
+    "kontakt_tel": "+423 375 91 00",
+    "antrag_url": "https://www.eb-liechtenstein.li/"
   },
   {
     "id": 35,
@@ -801,13 +864,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf Literatur und Bildung",
+    "bedingungen": "Die Liechtensteinische Landesbibliothek unterstützt Bildungs- und Kulturprojekte mit liechtensteinischem Bezug. Angebote: Lesungen, Ausstellungen, kulturpädagogische Veranstaltungen, Kooperation mit Schulen. Keine direkte finanzielle Projektförderung – Wert liegt in Infrastruktur (Veranstaltungsräume, Bestände), Netzwerk und Medienpartnerschaften. Anfragen für Kooperationsprojekte an Direktion richten.",
     "website": "https://www.landesbibliothek.li/",
     "tags": [
       "bibliothek",
       "literatur",
       "bildung"
-    ]
+    ],
+    "kontakt_email": "info@landesbibliothek.li",
+    "kontakt_tel": "+423 236 63 63",
+    "antrag_url": "https://www.landesbibliothek.li/"
   },
   {
     "id": 36,
@@ -822,13 +888,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf Kulturerbe und Geschichte",
+    "bedingungen": "Das Liechtensteinische Landesmuseum fördert Projekte zu Kulturerbe, Geschichte und Naturkunde Liechtensteins. Möglichkeiten: Kooperationsausstellungen, Forschungspartnerschaften, Leihgaben. Keine offene Projektförderung – Anfragen kuratorisch geprüft. Für Forschungsprojekte mit historisch-kulturellem Bezug: schriftliche Anfrage mit Konzept, Zeitplan und Budget. Adresse: Städtle 43, 9490 Vaduz.",
     "website": "https://www.landesmuseum.li/",
     "tags": [
       "museum",
       "kulturerbe",
       "geschichte"
-    ]
+    ],
+    "kontakt_email": "info@landesmuseum.li",
+    "kontakt_tel": "+423 239 68 20",
+    "antrag_url": "https://www.landesmuseum.li/"
   },
   {
     "id": 37,
@@ -843,13 +912,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Laufend",
     "frist_typ": "laufend",
-    "bedingungen": "Künstlerische Ausbildung erforderlich",
+    "bedingungen": "Die Kunstschule Liechtenstein in Nendeln bietet subventionierte Kurse, Workshops und berufsbegleitende Weiterbildung in Bildender Kunst, Design und Medien. Angebot für alle Altersgruppen. Kursgebühren sind dank Landessubventionierung deutlich günstiger als Marktpreise. Keine separate Antragsförderung – Anmeldung direkt für Kurse. Berufsschulabschlüsse und Kunstdiplome möglich.",
     "website": "https://www.kunstschule.li/",
     "tags": [
       "kunst",
       "schule",
       "ausbildung"
-    ]
+    ],
+    "kontakt_email": "office@kunstschule.li",
+    "kontakt_tel": "+423 375 05 05",
+    "antrag_url": "https://www.kunstschule.li/"
   },
   {
     "id": 38,
@@ -865,13 +937,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Laufend",
     "frist_typ": "laufend",
-    "bedingungen": "Musiktalent und Engagement erforderlich",
+    "bedingungen": "Die Liechtensteinische Musikschule bietet subventionierten Musikunterricht für alle Altersgruppen (ab 3 Jahren). Instrumente: Streichinstrumente, Blasinstrumente, Klavier, Gitarre, Gesang, Percussion, Komposition. Staatliche Subventionierung macht Unterricht erschwinglich (Lektionsgebühr je nach Einkommensgruppe). Aufnahme nach Anmeldung und kurzem Vorgespräch. Stipendien für besonders begabte Schüler möglich (Auskunft bei der Schule).",
     "website": "https://www.musikschule.li/",
     "tags": [
       "musik",
       "ausbildung",
       "jugend"
-    ]
+    ],
+    "kontakt_email": "info@musikschule.li",
+    "kontakt_tel": "+423 235 03 30",
+    "antrag_url": "https://www.musikschule.li/"
   },
   {
     "id": 39,
@@ -883,17 +958,20 @@
       "Schüler"
     ],
     "zielgruppe_text": "Schüler und Studierende",
-    "foerderumfang": "Projektbezogen (variabel)",
+    "foerderumfang": "Einkommensabhängig (variabel, bis ca. CHF 16'000/Jahr)",
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip (vor Schuljahresbeginn)",
     "frist_typ": "jährlich",
-    "bedingungen": "Bedürftigkeit und schulische Leistung nachweisen",
+    "bedingungen": "Staatliche Bildungsstipendien des Schulamtes (Stipendienstelle). Anspruch: Schüler und Studierende mit Wohnsitz in Liechtenstein bei nachgewiesener Bedürftigkeit (Einkommens- und Vermögensprüfung der Familie). Ausbildungsstufen: Berufslehre, Berufsmatura, Gymnasium, Hochschule. Stipendium deckt Ausbildungskosten (Schulgeld, Lehrmittel, evtl. Lebenshaltungskosten). Antrag vor Schuljahresbeginn beim Schulamt einreichen. Formular auf llv.li. Rückzahlungspflicht: Nein (Stipendium, kein Darlehen).",
     "website": "https://www.llv.li/de/landesverwaltung/schulamt",
     "tags": [
       "stipendium",
       "bildung",
       "schule"
-    ]
+    ],
+    "kontakt_email": "stipendienstelle@llv.li",
+    "kontakt_tel": "+423 236 67 78",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/schulamt/stipendien"
   },
   {
     "id": 40,
@@ -905,17 +983,20 @@
       "Jugendliche"
     ],
     "zielgruppe_text": "Auszubildende und Lehrlinge",
-    "foerderumfang": "Stipendien (variabel)",
+    "foerderumfang": "Einkommensabhängig (variabel)",
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Berufsausbildung in Liechtenstein erforderlich",
+    "bedingungen": "Lehrlings- und Berufsausbildungsstipendien für Auszubildende in anerkannten Lehrberufen in Liechtenstein. Bedürftigkeitsprüfung; elterliches Einkommen relevant. Antrag zu Beginn der Ausbildung bei der Stipendienstelle des Schulamtes. Formular auf llv.li; Einreichung mit aktueller Steuerveranlagung, Ausbildungsvertrag und Schulbestätigung. Jährliche Erneuerung des Antrags erforderlich.",
     "website": "https://www.llv.li/de/landesverwaltung/schulamt",
     "tags": [
       "ausbildung",
       "lehrling",
       "stipendium"
-    ]
+    ],
+    "kontakt_email": "stipendienstelle@llv.li",
+    "kontakt_tel": "+423 236 67 78",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/schulamt/stipendien"
   },
   {
     "id": 41,
@@ -930,13 +1011,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Arbeitsmarktrelevanz erforderlich",
+    "bedingungen": "Das Amt für Soziale Dienste (ASD) kann Weiterbildungs- und Umschulungsmassnahmen für Arbeitssuchende und Sozialhilfeempfänger finanzieren. Voraussetzung: Angemeldete Arbeitslosigkeit oder Sozialhilfebezug. Massnahme muss zur Wiedereingliederung in den Arbeitsmarkt geeignet sein. Kurskosten, Lehrmittel und ggf. Verpflegungskosten förderfähig. Antrag über persönliche Fallbegleitung beim ASD. Massnahme muss vorab bewilligt sein.",
     "website": "https://www.llv.li/de/landesverwaltung/amt-fuer-soziale-dienste",
     "tags": [
       "weiterbildung",
       "umschulung",
       "arbeit"
-    ]
+    ],
+    "kontakt_email": "info.asd@llv.li",
+    "kontakt_tel": "+423 236 71 11",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/amt-fuer-soziale-dienste"
   },
   {
     "id": 42,
@@ -952,13 +1036,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Laufend",
     "frist_typ": "laufend",
-    "bedingungen": "Fokus auf Spracherwerb",
+    "bedingungen": "Das Amt für Kultur fördert Sprachkurse und Sprachförderungsprojekte, insbesondere für Integration und Bildung. Subventioniertes Kursangebot für Deutsch als Zweitsprache und weitere Sprachen. Kooperationen mit Schulen, Gemeinden und Kultureinrichtungen. Keine individuelle Förderantragstellung – Teilnahme an bestehenden Kursen; Institutionen können für neue Sprachkursangebote Projektförderung beantragen.",
     "website": "https://www.llv.li/de/landesverwaltung/amt-fuer-kultur",
     "tags": [
       "sprache",
       "bildung",
       "integration"
-    ]
+    ],
+    "kontakt_email": "info.aku@llv.li",
+    "kontakt_tel": "+423 236 63 40",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/amt-fuer-kultur"
   },
   {
     "id": 43,
@@ -973,13 +1060,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Studium an der Universität Liechtenstein erforderlich",
+    "bedingungen": "Die Universität Liechtenstein vergibt Leistungs- und Bedarfsstipendien für Studierende aller Studiengänge (BSc, MSc, PhD). Leistungsstipendien für besonders gute akademische Ergebnisse. Bedarfsstipendien bei nachgewiesener finanzieller Bedürftigkeit. Zusätzlich: Graduiertenstipendien für Doktorierende. Bewerbung mit Motivationsschreiben, Lebenslauf, Immatrikulationsnachweis und ggf. Einkommensnachweisen. Fristen: Semesterbeginn. Detaillierte Informationen auf uni.li.",
     "website": "https://www.uni.li/de/studium/finanzierung",
     "tags": [
       "stipendium",
       "universität",
       "studium"
-    ]
+    ],
+    "kontakt_email": "info@uni.li",
+    "kontakt_tel": "+423 265 12 00",
+    "antrag_url": "https://www.uni.li/de/studium/finanzierung"
   },
   {
     "id": 44,
@@ -990,18 +1080,21 @@
       "Studierende"
     ],
     "zielgruppe_text": "Masterstudierende",
-    "foerderumfang": "Vollstipendien (Studium + Lebenshaltung)",
+    "foerderumfang": "Vollstipendien: Studiengebühren, Lebenshaltungskostenzuschuss, Reisekosten",
     "foerderumfang_max_chf": null,
     "antragsfrist": "Jährlich (meist Dezember)",
     "frist_typ": "jährlich",
-    "bedingungen": "Masterstudium mit internationaler Komponente",
+    "bedingungen": "Erasmus Mundus Joint Master Degrees sind EU-finanzierte internationale Masterprogramme mit Studium an mehreren europäischen Hochschulen. Für Bewerber ausserhalb Europas: Vollstipendien verfügbar (Studiengebühren + EUR 1'000/Monat Lebenshaltungskosten + Reisekosten). Für EU/EWR-Bürger: Teilstipendien. Bewerbung direkt beim jeweiligen Programm; Zulassung hochkompetitiv. Liste der Erasmus Mundus Programme auf der EU-Website.",
     "website": "https://www.uni.li",
     "tags": [
       "stipendium",
       "EU",
       "master",
       "international"
-    ]
+    ],
+    "kontakt_email": "info@uni.li",
+    "kontakt_tel": "+423 265 12 00",
+    "antrag_url": "https://www.uni.li/de/studium/mobilitaet-und-austausch"
   },
   {
     "id": 45,
@@ -1017,13 +1110,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Mehrmals jährlich",
     "frist_typ": "mehrmals jährlich",
-    "bedingungen": "Hochwertige Forschung erforderlich",
+    "bedingungen": "Forschungs- und Doktorandenstipendien über verschiedene Programme: (1) Interne Uni-LI-Stipendien für Doktorierende (über FFF-Programm); (2) SNF Doctoral Fellowships; (3) FWF Stipendien; (4) Industry-funded PhD positions. Voraussetzung: Abgeschlossenes Masterstudium, Forschungsexposé, Betreuungszusage von Professorin/Professor. Für interne Stipendien: Bewerbung bei Graduiertenschule der Universität Liechtenstein.",
     "website": "https://www.uni.li/de/forschung/forschungsfoerderung",
     "tags": [
       "stipendium",
       "doktorat",
       "forschung"
-    ]
+    ],
+    "kontakt_email": "info@uni.li",
+    "kontakt_tel": "+423 265 12 00",
+    "antrag_url": "https://www.uni.li/de/forschung/forschungsfoerderung"
   },
   {
     "id": 46,
@@ -1038,14 +1134,17 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Studium mit Auslandskomponente erforderlich",
+    "bedingungen": "Erasmus+ Mobilitätsstipendien für Auslandsstudium und Praktika. Betrag: EUR 300–500/Monat je nach Zielland (Programmland). Mindestdauer: 2 Monate (Praktikum) bzw. ein Semester (Studium). Bewerbung bei Auslandskoordination der Universität Liechtenstein; Zulassung an Partnerhochschule erforderlich. Anerkennungszusage für Studienleistungen vorab einholen (Learning Agreement). Fristen: Oktober/November für Sommersemester, März/April für Wintersemester.",
     "website": "https://www.uni.li",
     "tags": [
       "ausland",
       "mobilität",
       "studium",
       "erasmus"
-    ]
+    ],
+    "kontakt_email": "info@uni.li",
+    "kontakt_tel": "+423 265 12 00",
+    "antrag_url": "https://www.uni.li/de/studium/mobilitaet-und-austausch"
   },
   {
     "id": 47,
@@ -1083,13 +1182,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip (jährlich)",
     "frist_typ": "jährlich",
-    "bedingungen": "Aktive Jugendleiterschaft nachweisen",
+    "bedingungen": "Jugendleiterurlaub gemäss Jugendgesetz Liechtenstein. Anspruch: Jugendleiter ab 16 Jahren, die ehrenamtlich in anerkannten Jugendorganisationen tätig sind. Arbeitgeber muss den Urlaub gewähren; staatliche Entschädigungszahlung für Lohnausfall. Antrag beim Amt für Soziale Dienste mit Nachweis der Jugendleiterschaft und Kursbestätigung. Jährlich antragsberechtigt.",
     "website": "https://www.llv.li/de/landesverwaltung/amt-fuer-soziale-dienste",
     "tags": [
       "jugend",
       "leitung",
       "ehrenamt"
-    ]
+    ],
+    "kontakt_email": "info.asd@llv.li",
+    "kontakt_tel": "+423 236 71 11",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/amt-fuer-soziale-dienste"
   },
   {
     "id": 49,
@@ -1100,18 +1202,21 @@
       "Privatpersonen"
     ],
     "zielgruppe_text": "Bedürftige Personen",
-    "foerderumfang": "Einkommensabhängig",
+    "foerderumfang": "Einkommensabhängig (Differenz zwischen zumutbarer Wohnkostenbelastung und tatsächlicher Miete)",
     "foerderumfang_max_chf": null,
     "antragsfrist": "Laufend",
     "frist_typ": "laufend",
-    "bedingungen": "Bedürftigkeit und Wohnkosten nachweisen",
+    "bedingungen": "Staatliche Mietbeihilfen für einkommensschwache Personen mit Wohnsitz in Liechtenstein. Anspruch: Eigenes Einkommen unterhalb der Einkommensgrenze; tatsächliche Mietkosten übersteigen zumutbaren Eigenanteil. Berechnung nach Haushaltsgrösse und Einkommen. Nicht kumulierbar mit anderen Wohnbeihilfen. Antrag mit Mietvertrag, Einkommensnachweis und aktueller Steuerveranlagung beim Amt für Soziale Dienste. Laufend antragsberechtigt.",
     "website": "https://www.llv.li/de/landesverwaltung/amt-fuer-soziale-dienste/finanzielle-hilfen/mietbeitraege",
     "tags": [
       "wohnen",
       "miete",
       "sozial",
       "bedürftig"
-    ]
+    ],
+    "kontakt_email": "info.asd@llv.li",
+    "kontakt_tel": "+423 236 71 11",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/amt-fuer-soziale-dienste/finanzielle-hilfen/mietbeitraege"
   },
   {
     "id": 50,
@@ -1127,13 +1232,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Jährlich",
     "frist_typ": "jährlich",
-    "bedingungen": "J+S Anerkennung erforderlich",
+    "bedingungen": "J+S (Jugend und Sport) ist ein Bundesprogramm (CH/LI) zur Sportförderung für Kinder und Jugendliche bis 20 Jahre. Liechtenstein erhält jährlich ca. CHF 230'000+ für ~50 Organisationen. Voraussetzungen für Organisationen: J+S-Anerkennung (Registrierung als J+S-Anbieter), ausgebildete J+S-Leiter, Kurse nach J+S-Rahmenprogramm. Für neue J+S-Leiter: Ausbildungskurse über Swiss Olympic / Stabsstelle Sport. Anmeldung über Sportamt.",
     "website": "https://www.llv.li/de/landesverwaltung/stabsstelle-fuer-sport",
     "tags": [
       "sport",
       "jugend",
       "J+S"
-    ]
+    ],
+    "kontakt_email": "sport@llv.li",
+    "kontakt_tel": "+423 236 63 30",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/stabsstelle-fuer-sport"
   },
   {
     "id": 51,
@@ -1244,13 +1352,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf Gleichstellung und Chancengleichheit",
+    "bedingungen": "Das Amt für Soziale Dienste fördert Projekte zur Förderung der Chancengleichheit und Gleichstellung. Förderbereiche: Gleichstellung von Frauen und Männern, Integration von Menschen mit Behinderungen, Prävention von Diskriminierung. Antragsberechtigte: Institutionen, Vereine, gemeinnützige Organisationen. Antrag mit Projektbeschreibung, Zielgruppen, Massnahmen, Wirkungsziele und detailliertem Budget. Entscheid durch das ASD.",
     "website": "https://www.llv.li/de/landesverwaltung/amt-fuer-soziale-dienste/chancengleichheit",
     "tags": [
       "gleichstellung",
       "sozial",
       "chancengleichheit"
-    ]
+    ],
+    "kontakt_email": "info.asd@llv.li",
+    "kontakt_tel": "+423 236 71 11",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/amt-fuer-soziale-dienste/chancengleichheit"
   },
   {
     "id": 56,
@@ -1265,13 +1376,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Direkter Zugang",
     "frist_typ": "laufend",
-    "bedingungen": "Keine",
+    "bedingungen": "Die LAK (Liechtensteinische Alters- und Krankenhilfe) betreibt Pflegeheime, Spitex und ambulante Dienste. Für Pflegebedürftige: staatlich subventionierte Pflege in LAK-Einrichtungen (St. Florin Vaduz, St. Laurentius Schaan, St. Mamertus Triesen, weitere). Finanzielle Unterstützung möglich für Personen, die Pflegekosten nicht vollständig selbst tragen können. Einstufung nach Pflegebedarf (RAI-Assessment). Anmeldung für Pflegeplatz über Spitex oder direkt bei LAK.",
     "website": "https://www.lak.li/",
     "tags": [
       "alter",
       "gesundheit",
       "beratung"
-    ]
+    ],
+    "kontakt_email": "info@lak.li",
+    "kontakt_tel": "+423 239 12 12",
+    "antrag_url": "https://lak.li/"
   },
   {
     "id": 57,
@@ -1333,13 +1447,15 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Direkter Zugang",
     "frist_typ": "laufend",
-    "bedingungen": "Keine",
+    "bedingungen": "Das Liechtensteinische Landesspital (LLS) in Vaduz bietet stationäre und ambulante medizinische Versorgung für Einwohner Liechtensteins. Staatlich finanziert; Kosten für Grundversicherte durch obligatorische Krankenkasse und staatliche Subventionen gedeckt. Notfallversorgung rund um die Uhr. Für Spezialpatienten: Überweisungen an Zentrumsspitäler in der Schweiz. Keine separate Antragstellung – direkter Zugang über Hausarzt oder Notfallstation.",
     "website": "https://www.landesspital.li/",
     "tags": [
       "gesundheit",
       "spital",
       "medizin"
-    ]
+    ],
+    "kontakt_tel": "+423 235 44 11",
+    "antrag_url": "https://www.landesspital.li/"
   },
   {
     "id": 60,
@@ -1374,17 +1490,20 @@
       "Landwirte"
     ],
     "zielgruppe_text": "Landwirte",
-    "foerderumfang": "Projektbezogen (jährlich)",
+    "foerderumfang": "Einkommensunabhängige Flächenbeiträge (CHF/ha) + Tierprämien; variiert nach Bewirtschaftungsform",
     "foerderumfang_max_chf": null,
     "antragsfrist": "Jährlich",
     "frist_typ": "jährlich",
-    "bedingungen": "Agrarpolitik-Anforderungen erfüllt",
+    "bedingungen": "Direktzahlungen für Landwirte in Liechtenstein nach Agrarpolitikgesetz. Beitragsberechtigt: Bewirtschafter mit mind. 1 ha landwirtschaftliche Nutzfläche (LN). Beitragstypen: Kulturlandschaftsbeitrag (CHF/ha), Versorgungssicherheitsbeitrag, Biodiversitätsbeiträge, Tierwohlbeiträge. Antragstellung jährlich bis 31. Januar über Amt für Umwelt. Kontrollbesuche möglich. Anrechenbare Flächen müssen in Liechtenstein liegen.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft/foerderung",
     "tags": [
       "landwirtschaft",
       "direktzahlung",
       "agrar"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft/foerderung"
   },
   {
     "id": 62,
@@ -1395,17 +1514,20 @@
       "Landwirte"
     ],
     "zielgruppe_text": "Landwirte mit ökologischen Betriebsweisen",
-    "foerderumfang": "Projektbezogen (jährlich)",
+    "foerderumfang": "CHF-Beiträge pro ha je nach Ökotyp (Extenso-Wiesen: ca. CHF 1'000/ha; Bio: ca. CHF 1'600/ha)",
     "foerderumfang_max_chf": null,
     "antragsfrist": "Jährlich",
     "frist_typ": "jährlich",
-    "bedingungen": "Ökologische Betriebsweise nachweisen",
+    "bedingungen": "Ökobeiträge (Ökologischer Leistungsnachweis, ÖLN) für Landwirte mit ökologisch besonders wertvoller Bewirtschaftung. Förderbare Ökotypen: Extensiv genutzte Wiesen, wenig intensiv genutzte Wiesen, Streueflächen, Hecken/Bäume, Buntbrachen, Blühstreifen. Biologische Bewirtschaftung: Zusatzbeiträge für Bio-Betriebe (BioSuisse- oder Demeter-zertifiziert). Jährlicher Antrag beim Amt für Umwelt bis 31. Januar; Nachweis der ökologischen Massnahmen erforderlich.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft/foerderung",
     "tags": [
       "landwirtschaft",
       "ökologie",
       "bio"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft/foerderung"
   },
   {
     "id": 63,
@@ -1420,13 +1542,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Jährlich",
     "frist_typ": "jährlich",
-    "bedingungen": "Alpenbewirtschaftung nachweisen",
+    "bedingungen": "Alpungshilfe für die Bewirtschaftung liechtensteinischer und ausseralperischer Alpen. Grundbeitrag pro Normalstoss (NST) plus Zuschläge für besondere Leistungen (Alpung in schwer zugänglichem Gelände, Tierbetreuung, Milchwirtschaft). Voraussetzung: Mindestbewirtschaftungsdauer auf der Alp; Alpkataster-Einbindung. Jährlicher Antrag beim Amt für Umwelt; Bestossung mit zugelassenen Nutztieren nachweisen.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft/foerderung",
     "tags": [
       "landwirtschaft",
       "alpen",
       "alpung"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft/foerderung"
   },
   {
     "id": 64,
@@ -1437,17 +1562,20 @@
       "Landwirte"
     ],
     "zielgruppe_text": "Landwirte",
-    "foerderumfang": "Projektbezogen (bis 50% Kostendeckung)",
+    "foerderumfang": "Bis zu 50% der anrechenbaren Investitionskosten (Gebäude, Wege, Meliorationen)",
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Baubewilligung und Kostenvoranschlag erforderlich",
+    "bedingungen": "Förderung struktureller Verbesserungen in der Landwirtschaft. Förderfähig: Landwirtschaftliche Gebäude (Stall, Scheune), Güllegrube, Hofzufahrt, Drainagen, Güterwege, Bewässerungsanlagen. Voraussetzungen: Baubewilligung, detaillierter Kostenvoranschlag, Nachweis der betrieblichen Notwendigkeit. Antrag VOR Baubeginn beim Amt für Umwelt. Mindestselbstfinanzierungsanteil 50%. Betrieb muss langfristig wirtschaftlich tragfähig sein.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft/foerderung",
     "tags": [
       "landwirtschaft",
       "bau",
       "infrastruktur"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft/foerderung"
   },
   {
     "id": 65,
@@ -1463,13 +1591,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf regionale Wertschöpfung",
+    "bedingungen": "Förderung regionaler Wertschöpfungsketten im Agrar- und Lebensmittelbereich. Förderfähig: Aufbau oder Ausbau von Direktvermarktung, Verarbeitungsanlagen (Käserei, Schlachthof, Bäckerei), Kooperationen zwischen Landwirten und Verarbeitungsbetrieben. Fokus auf regionale, liechtensteinische Produkte. Antrag mit Businessplan, Nachhaltigkeitskonzept und Absatzstrategie beim Amt für Umwelt.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft",
     "tags": [
       "landwirtschaft",
       "regional",
       "wertschöpfung"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/landwirtschaft"
   },
   {
     "id": 66,
@@ -1484,13 +1615,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Tierschutzprojekt erforderlich",
+    "bedingungen": "Tierschutz und Tiergesundheitsförderung für Landwirte und Tierhalter. Förderfähig: besonders tierfreundliche Stallhaltung (RAUS/BTS-Beiträge), freiwillige Tierseuchen-Prophylaxemassnahmen, Investitionen in tierschutzgerechte Haltungsinfrastruktur. Pflichtprogramm: Vorgaben des Tierschutzgesetzes (TSchG). Freiwillige Massnahmen: Zusatzbeiträge möglich. Beratung und Kontrollen durch Veterinärdienst.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung",
     "tags": [
       "tier",
       "tierschutz",
       "landwirtschaft"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung"
   },
   {
     "id": 67,
@@ -1505,13 +1639,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Nachhaltige Forstwirtschaft erforderlich",
+    "bedingungen": "Förderung nachhaltiger Forstwirtschaft für Waldbesitzer und Forstbetriebe. Förderfähige Massnahmen: Jungwaldpflege und Durchforstung, Schutzwaldpflege, waldbauliche Aufwertungen, Forstwegebau, Aufforstung mit standortgerechten Baumarten. Antrag mit Waldwirtschaftsplan oder Massnahmenplan beim Amt für Umwelt. Zuschuss zum lokalen Forstwirtschaftsplan empfohlen.",
     "website": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/umwelt",
     "tags": [
       "forst",
       "wald",
       "nachhaltigkeit"
-    ]
+    ],
+    "kontakt_email": "info.au@llv.li",
+    "kontakt_tel": "+423 236 64 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/freizeit-umwelt-und-tierhaltung/umwelt"
   },
   {
     "id": 68,
@@ -1527,13 +1664,16 @@
     "foerderumfang_max_chf": 3300,
     "antragsfrist": "Antragsprinzip (3x pro Jahr)",
     "frist_typ": "mehrmals jährlich",
-    "bedingungen": "Grenzüberschreitende Partnerschaft erforderlich",
+    "bedingungen": "IBK-Begegnungsförderung für grenzüberschreitende Projekte in der Bodenseeregion (D, A, CH, LI, FL). Max. EUR 3'000 pro Projekt. Voraussetzung: Kooperation mit mind. einem Partner aus einem anderen IBK-Mitgliedsland. Themen: Kultur, Bildung, Sport, gesellschaftliche Begegnung. Antrag über Geschäftsstelle der IBK (Konstanz); 3 Entscheidungsrunden pro Jahr. Einfaches Verfahren; kurzer Antrag mit Kurzbeschreibung und Kostenplan.",
     "website": "https://www.bodenseekonferenz.org",
     "tags": [
       "international",
       "bodensee",
       "kooperation"
-    ]
+    ],
+    "kontakt_email": "info@bodenseekonferenz.org",
+    "kontakt_tel": "+49 7531 52722",
+    "antrag_url": "https://www.bodenseekonferenz.org"
   },
   {
     "id": 69,
@@ -1545,18 +1685,21 @@
       "Unternehmen"
     ],
     "zielgruppe_text": "Kooperationen zwischen Liechtenstein und Nachbarregionen",
-    "foerderumfang": "Projektbezogen (bis EUR 30'000)",
+    "foerderumfang": "Bis zu EUR 30'000 pro Projekt (max. 50% der förderfähigen Kosten)",
     "foerderumfang_max_chf": 33000,
     "antragsfrist": "Antragsprinzip (jährlich)",
     "frist_typ": "jährlich",
-    "bedingungen": "Internationale Kooperation erforderlich",
+    "bedingungen": "INTERREG VI Alpenrhein-Bodensee-Hochrhein (ABH): EU-Förderprogramm für grenzüberschreitende Kooperationsprojekte. Liechtenstein als vollwertiger Programmpartner. Themenschwerpunkte: Innovation, Nachhaltigkeit, Gemeinschaft, regionale Wettbewerbsfähigkeit. Mindestens 2 Projektpartner aus verschiedenen Programmregionen. Antrag auf Englisch oder Deutsch; ausführlicher Projektantrag mit Wirkungslogik erforderlich. Beratung über IBK-Geschäftsstelle dringend empfohlen. Laufzeit typisch 2–3 Jahre.",
     "website": "https://www.bodenseekonferenz.org",
     "tags": [
       "international",
       "interreg",
       "kooperation",
       "bodensee"
-    ]
+    ],
+    "kontakt_email": "info@bodenseekonferenz.org",
+    "kontakt_tel": "+49 7531 52722",
+    "antrag_url": "https://www.bodenseekonferenz.org"
   },
   {
     "id": 70,
@@ -1595,13 +1738,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Internationale Partnerschaft erforderlich",
+    "bedingungen": "Das Amt für Volkswirtschaft unterstützt grenzüberschreitende Kooperationen zwischen liechtensteinischen und ausländischen Unternehmen oder Organisationen. Förderung im Rahmen bestehender Abkommen (INTERREG, bilaterale Verträge, IBK). Beratung und Begleitung bei Antragsverfahren für internationale Förderprogramme. Keine eigenständige Förderung – Koordination und Vermittlung zu geeigneten EU-/internationalen Programmen.",
     "website": "https://www.llv.li/de/unternehmen/finanzierung-foerderung",
     "tags": [
       "international",
       "kooperation",
       "grenzüberschreitend"
-    ]
+    ],
+    "kontakt_email": "info.avw@llv.li",
+    "kontakt_tel": "+423 236 68 71",
+    "antrag_url": "https://www.llv.li/de/unternehmen/finanzierung-foerderung"
   },
   {
     "id": 72,
@@ -1686,14 +1832,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf bezahlbares Wohnen",
+    "bedingungen": "Die Hilti Foundation fördert Projekte im Bereich bezahlbares Wohnen und Technologieinnovation für soziale Zwecke. Fokus auf skalierbare Lösungen für Wohnraummangel und leistbares Wohnen in urbanen Gebieten. Keine offene Ausschreibung – strategische Partnerschaften. Projektanfragen mit klarer Wirkungslogik, nachgewiesener Machbarkeit, Skalierbarkeitsplan und erfahrenem Team. Bevorzugt: Projekte mit Technologiekomponente und messbarer sozialer Wirkung.",
     "website": "https://www.hiltifoundation.org/de",
     "tags": [
       "wohnen",
       "hilti",
       "stiftung",
       "technologie"
-    ]
+    ],
+    "kontakt_tel": "+423 234 3762",
+    "antrag_url": "https://www.hiltifoundation.org/what-we-do"
   },
   {
     "id": 76,
@@ -1709,14 +1857,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf STEM und Nachhaltigkeit",
+    "bedingungen": "Die Hilti Foundation fördert angewandte Forschung und Bildungsprojekte in den Bereichen STEM, Nachhaltigkeit und soziale Innovation. Typische Projekte: Kooperationen zwischen Hochschulen und Praxis, Bildungsprogramme für benachteiligte Jugendliche, Forschung zu relevanten gesellschaftlichen Herausforderungen. Anfragen: detailliertes Wirkungskonzept, Budget, Evaluationsplan, Teamprofil. Keine offene jährliche Ausschreibung – Anfragen jederzeit möglich.",
     "website": "https://www.hiltifoundation.org/de",
     "tags": [
       "forschung",
       "bildung",
       "STEM",
       "hilti"
-    ]
+    ],
+    "kontakt_tel": "+423 234 3762",
+    "antrag_url": "https://www.hiltifoundation.org/applied-research-education"
   },
   {
     "id": 77,
@@ -1731,13 +1881,15 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Wissenschaftliche Exzellenz erforderlich",
+    "bedingungen": "Die Fürst Franz Josef von Liechtenstein Stiftung fördert wissenschaftliche Projekte und Forschungsarbeiten mit liechtensteinischem Bezug. Alle zwei Jahre: Verleihung des Fürst-Franz-Josef-von-Liechtenstein-Preises (CHF 30'000) an herausragende wissenschaftliche Leistungen. Für Einzelprojekte: Gesuch an Stiftung mit Forschungskonzept, Budgetplan und Referenzen. Vorrang für Nachwuchswissenschaftler. Anfragen über die Stiftungsadresse (Postfach 56, FL-9490 Vaduz).",
     "website": "https://www.ffj-stiftung.li/",
     "tags": [
       "wissenschaft",
       "forschung",
       "stiftung"
-    ]
+    ],
+    "kontakt_tel": "+423 265 30 03",
+    "antrag_url": "https://www.ffj-stiftung.li/"
   },
   {
     "id": 78,
@@ -1752,14 +1904,15 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf Bekämpfung von Hunger und Armut",
+    "bedingungen": "Die Bessere Zukunft Stiftung mit Sitz in Liechtenstein fördert Projekte gegen Hunger, Armut und für nachhaltige Entwicklung weltweit. Fokus auf Subsistenzlandwirtschaft, Ernährungssicherheit und Armutsbekämpfung. Anfragen per E-Mail mit Projektbeschreibung, Zielgruppe, Wirkungs-Logik, Budget und Organisationsprofil. Keine offene jährliche Ausschreibung.",
     "website": "https://besserezukunft.li/",
     "tags": [
       "armut",
       "hunger",
       "entwicklung",
       "stiftung"
-    ]
+    ],
+    "antrag_url": "https://besserezukunft.li/"
   },
   {
     "id": 79,
@@ -1774,13 +1927,16 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf Inklusion und Sport",
+    "bedingungen": "Special Olympics Liechtenstein (SOLie) fördert sportliche Inklusion für Menschen mit geistiger Behinderung. Finanzierung von Sportprogrammen, Trainings, nationalen und internationalen Wettkämpfen (World Games, European Games). Sportler mit geistiger Behinderung und deren Familien als Zielgruppe. Keine Förderbeträge an Einzelpersonen – Teilnahme an Programmen kostenlos. Vereine können für Inklusionsprojekte Unterstützung anfragen. Freiwillige und Coaches gesucht.",
     "website": "https://www.specialolympics.li/",
     "tags": [
       "sport",
       "inklusion",
       "behinderung"
-    ]
+    ],
+    "kontakt_email": "info@specialolympics.li",
+    "kontakt_tel": "+423 793 99 75",
+    "antrag_url": "https://specialolympics.li/"
   },
   {
     "id": 80,
@@ -1795,13 +1951,14 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf Entwicklungshilfe",
+    "bedingungen": "WIR TEILEN: Fastenopfer Liechtenstein ist eine kirchliche Hilfsorganisation, die Entwicklungsprojekte in Asien, Afrika und Lateinamerika fördert. Schwerpunkte: Nahrungsmittelsicherheit, Klimaschutz, Menschenrechte, Basisgesundheit. Lokale Partnerorganisationen in Entwicklungsländern als Projektträger. Liechtensteinische Organisationen können durch Partnerschaft oder Spendenprojekte unterstützen. Direkte Projektförderung für externe Bewerber auf Anfrage.",
     "website": "https://www.fastenopfer.li/",
     "tags": [
       "entwicklung",
       "kirchlich",
       "international"
-    ]
+    ],
+    "antrag_url": "https://www.fastenopfer.li/"
   },
   {
     "id": 81,
@@ -1816,13 +1973,14 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip",
     "frist_typ": "antragsprinzip",
-    "bedingungen": "Fokus auf Soziales und Frauenförderung",
+    "bedingungen": "Der Rotary Club Liechtenstein-Eschnerberg unterstützt soziale und humanitäre Projekte lokal und international. Förderbereiche: Gesundheitsversorgung, Bildung, Wasserversorgung, Frauenförderung, Katastrophenhilfe. Für Förderanfragen: Kontakt mit dem RC Liechtenstein-Eschnerberg aufnehmen (über rotary.org Clubsuche). Global Grants über Rotary International möglich (internationales Kooperationsprojekt erforderlich). Schwerpunkt auf messbarer gemeinnütziger Wirkung.",
     "website": "https://www.rotary.org/",
     "tags": [
       "sozial",
       "rotary",
       "frauen"
-    ]
+    ],
+    "antrag_url": "https://www.rotary.org/"
   },
   {
     "id": 82,
@@ -1860,13 +2018,14 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Direkter Zugang",
     "frist_typ": "laufend",
-    "bedingungen": "Teilweise kostenpflichtig",
+    "bedingungen": "Fundraiso.ch bietet eine der grössten Stiftungsdatenbanken der Schweiz und Liechtensteins. Enthält über 500 liechtensteinische Stiftungen und deren Förderschwerpunkte. Für Organisationen und Privatpersonen, die geeignete Förderstiftungen suchen. Basis-Zugang kostenlos; Premium-Features kostenpflichtig (ab CHF 49/Monat). Ergänzungstool zu dieser Plattform für spezifische Stiftungsrecherche.",
     "website": "https://www.fundraiso.ch/de/page/stiftungsverzeichnis-liechtenstein",
     "tags": [
       "datenbank",
       "stiftung",
       "information"
-    ]
+    ],
+    "antrag_url": "https://www.fundraiso.ch/de/page/stiftungsverzeichnis-liechtenstein"
   },
   {
     "id": 84,
@@ -1881,13 +2040,14 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Direkter Zugang",
     "frist_typ": "laufend",
-    "bedingungen": "Keine",
+    "bedingungen": "gemeinnuetzig.li ist das offizielle Verzeichnis gemeinnütziger Organisationen in Liechtenstein. Führt über 600 Vereine, Stiftungen und Initiativen. Für Fördersuche: vollständige Liste nach Themenbereich filterbar. Für Organisationen: kostenloser Eintrag ins Verzeichnis möglich. Ergänzt VLGST-Stiftungsverzeichnis um alle Arten gemeinnütziger Organisationen.",
     "website": "https://www.gemeinnuetzig.li/",
     "tags": [
       "verzeichnis",
       "gemeinnützig",
       "information"
-    ]
+    ],
+    "antrag_url": "https://www.gemeinnuetzig.li/"
   },
   {
     "id": 85,
@@ -1928,7 +2088,7 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Laufend",
     "frist_typ": "laufend",
-    "bedingungen": "Zielvereinbarungen mit Bund/Land möglich. Liechtensteinische KMU können am EnAW-Netzwerk teilnehmen und mehrfach profitieren (Energiesparmassnahmen + Förderungen).",
+    "bedingungen": "Die Energie-Agentur der Wirtschaft (EnAW) unterstützt KMU in Liechtenstein bei der systematischen Reduktion des Energieverbrauchs. Hauptinstrument: Zielvereinbarungen mit Bund und/oder Land. Leistungen: kostenlose Energieanalyse, Massnahmenplanung, Zugang zu Fördermitteln (Land Liechtenstein + Gemeinden + Klimastiftung kumulierbar), Beitrag zu Zertifizierungen. Liechtensteinische KMU können dem EnAW-Netzwerk beitreten (Jahresbeitrag). Geförderte Massnahmen: Druckluft, Beleuchtung, Kältetechnik, Wärmerückgewinnung, Motorenoptimierung.",
     "website": "https://www.enaw.ch",
     "tags": [
       "energie",
@@ -1936,7 +2096,9 @@
       "KMU",
       "zielvereinbarung",
       "nachhaltigkeit"
-    ]
+    ],
+    "kontakt_tel": "+41 44 421 34 45",
+    "antrag_url": "https://www.enaw.ch"
   },
   {
     "id": 87,
@@ -2060,7 +2222,7 @@
     "foerderumfang_max_chf": 100000,
     "antragsfrist": "Jährlich (Deadline beachten; Medienkommission entscheidet)",
     "frist_typ": "jährlich",
-    "bedingungen": "Sitz in Liechtenstein, Redaktionsstatut und Journalistenkodex erforderlich. Neue Regeln seit 1. März 2025 (revidiertes MFG). Förderbeitrag darf Gesamterträge nicht übersteigen. Digitale und Online-Medien neu ausdrücklich förderfähig.",
+    "bedingungen": "Staatliche Medienförderung gemäss Medienförderungsgesetz (MFG, in Kraft ab 1. März 2025). Förderberechtigt: Medienunternehmen mit Sitz in Liechtenstein, mind. ein hauptberuflicher Medienmitarbeiter (min. 50% Pensum), publizistische Grundversorgung, Redaktionsstatut und Journalistenkodex. Förderkomponenten: Sockelbeitrag CHF 100'000 + variable Beiträge (Verbreitungskosten 30%, Aus-/Weiterbildung 75%). Digitale und Online-Medien ausdrücklich förderfähig. Gesamtbudget: ca. CHF 1.8 Mio./Jahr. Antrag jährlich bei der Medienkommission.",
     "website": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/anschubfinanzierung-medienunternehmen",
     "tags": [
       "medien",
@@ -2068,7 +2230,10 @@
       "digital",
       "online",
       "print"
-    ]
+    ],
+    "kontakt_email": "info.ak@llv.li",
+    "kontakt_tel": "+423 236 60 60",
+    "antrag_url": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/anschubfinanzierung-medienunternehmen"
   },
   {
     "id": 92,
@@ -2084,7 +2249,7 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Laufend (Antragsformular seit 1. März 2025 auf llv.li verfügbar)",
     "frist_typ": "laufend",
-    "bedingungen": "Businessplan erforderlich. Sitz in Liechtenstein. Fokus auf journalistisch-redaktionelle Tätigkeit. Einmaliger Beitrag – danach reguläre Medienförderung anstreben. Neu seit Medienförderungsgesetz (revidiert 5. Dezember 2024, in Kraft 1. März 2025).",
+    "bedingungen": "Einmalige Anschubfinanzierung für neue Medienunternehmen, die die Voraussetzungen für die reguläre Medienförderung noch nicht erfüllen. Neu seit MFG-Revision (5. Dezember 2024, in Kraft 1. März 2025). Voraussetzungen: Sitz in Liechtenstein, journalistisch-redaktionelle Tätigkeit, Businessplan. Höhe: nach Businessplan und Regierungsentscheid. Laufend beantragbar (Antragsformular auf llv.li seit 1. März 2025). Nur einmal pro Unternehmen; danach reguläre Medienförderung anstreben.",
     "website": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/anschubfinanzierung-medienunternehmen",
     "tags": [
       "medien",
@@ -2092,7 +2257,10 @@
       "journalismus",
       "anschubfinanzierung",
       "digital"
-    ]
+    ],
+    "kontakt_email": "info.ak@llv.li",
+    "kontakt_tel": "+423 236 60 60",
+    "antrag_url": "https://www.llv.li/de/unternehmen/finanzierung-foerderung/anschubfinanzierung-medienunternehmen"
   },
   {
     "id": 93,
@@ -2162,7 +2330,7 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip (jährlich)",
     "frist_typ": "jährlich",
-    "bedingungen": "Gemeinnütziger Zweck. Fokus auf Sport, Kultur und gesellschaftliche Projekte. Liechtenstein erhält einen Anteil am Swisslos-Reingewinn, der an gemeinnützige Organisationen ausgeschüttet wird.",
+    "bedingungen": "Swisslos Fonds Liechtenstein: Ausschüttung des liechtensteinischen Anteils am Swisslos-Reingewinn an gemeinnützige Organisationen in Sport, Kultur und gesellschaftlichen Projekten. Antragsberechtigte: Vereine, Organisationen, Institutionen mit gemeinnützigem Zweck und Sitz in Liechtenstein. Antrag jährlich bei der Stabsstelle für Sport (für Sportprojekte) oder der jeweils zuständigen Stelle. Verwendungsnachweis erforderlich.",
     "website": "https://www.llv.li/de/landesverwaltung/stabsstelle-fuer-sport",
     "tags": [
       "sport",
@@ -2171,7 +2339,10 @@
       "lotterie",
       "verein",
       "swisslos"
-    ]
+    ],
+    "kontakt_email": "sport@llv.li",
+    "kontakt_tel": "+423 236 63 30",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/stabsstelle-fuer-sport"
   },
   {
     "id": 96,
@@ -2186,7 +2357,7 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Antragsprinzip (jährlich, frühzeitig anfragen)",
     "frist_typ": "jährlich",
-    "bedingungen": "Liechtensteinische Staatsbürgerschaft oder Wohnsitz in Liechtenstein. Professionelle Tätigkeit als Kunstschaffende/r (bildende Kunst). Vergabe durch Amt für Kultur nach Qualitätskriterien.",
+    "bedingungen": "Atelier Berlin: Liechtenstein verfügt über ein Atelier in Berlin (Mitte), das das Amt für Kultur an liechtensteinische Kunstschaffende (Bildende Kunst) vergibt. Aufenthaltsdauer: in der Regel mehrere Monate. Bedingungen: liechtensteinische Staatsbürgerschaft oder Wohnsitz, professionelle künstlerische Tätigkeit in der Bildenden Kunst, überzeugendes Arbeitskonzept für den Berliner Aufenthalt. Keine finanzielle Unterstützung – nur Atelierstudio. Frühzeitig beim Amt für Kultur anfragen (beschränkte Plätze).",
     "website": "https://www.llv.li/en/national-administration/office-of-cultural-affairs/cultural-activities",
     "tags": [
       "kunst",
@@ -2194,7 +2365,10 @@
       "berlin",
       "residenz",
       "stipendium"
-    ]
+    ],
+    "kontakt_email": "info.aku@llv.li",
+    "kontakt_tel": "+423 236 63 40",
+    "antrag_url": "https://www.llv.li/de/landesverwaltung/amt-fuer-kultur/kulturschaffen"
   },
   {
     "id": 97,
@@ -2209,7 +2383,7 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Vor Baubeginn oder Kaufabschluss. Antrag beim Amt für Bau und Infrastruktur.",
     "frist_typ": "laufend",
-    "bedingungen": "Erstmaliges Wohneigentum (kein bestehendes familiengerechtes Wohneigentum in FL). Hauptwohnsitz in Liechtenstein. Förderfähig: Einfamilienhäuser und Wohneinheiten in verdichteter Bebauung. Kombinierbar mit Energieförderungen (PV, Wärmepumpe, Minergie).",
+    "bedingungen": "Wohnbauförderung des Amtes für Hochbau und Raumplanung. Anspruch: Volljährige mit Wohnsitz in Liechtenstein, erstmaliger Wohneigentumserwerb (kein bestehendes familiengerechtes Wohneigentum in FL), EWR-Bürger oder Schweizer gleichgestellt. Einkommensgrenzen 2025: Alleinstehende CHF 112'200, Haushalt CHF 201'800. Nettowohnfläche 60–150 m². Förderinstrument: zinsgünstiges Landesdarlehen oder Zinsverbilligung für bestehende Hypothek. Antrag VOR Baubeginn oder Kaufabschluss beim Amt für Hochbau einreichen. Kombinierbar mit Energieförderungen.",
     "website": "https://www.llv.li/en/national-administration/office-of-building-construction-and-spatial-planning/housing-subsidy",
     "tags": [
       "wohnen",
@@ -2217,7 +2391,10 @@
       "haus",
       "darlehen",
       "wohnbau"
-    ]
+    ],
+    "kontakt_email": "info.ahr@llv.li",
+    "kontakt_tel": "+423 236 66 00",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/bauen-und-wohnen/wohnbaufoerderung"
   },
   {
     "id": 98,
@@ -2286,7 +2463,7 @@
     "foerderumfang_max_chf": null,
     "antragsfrist": "Kein Antrag nötig – direkt beim Zahnarzt. Behandlung bei zugelassenen Zahnärzten in Liechtenstein.",
     "frist_typ": "laufend",
-    "bedingungen": "Gültig bis 18. Geburtstag. Behandlung muss bei zur Kinder- und Jugendzahnpflege berechtigten Zahnärzten in FL stattfinden. 60% Eigenanteil bleibt. Für Spezialbehandlungen: Überweisung + Voranmeldung beim Amt für Gesundheit vor der Behandlung zwingend.",
+    "bedingungen": "Kinder- und Jugendzahnpflege: Staat Liechtenstein übernimmt 40% der Zahnarztkosten nach Kinder- und Jugendzahnpflegetarif für alle unter 18 Jahren mit Wohnsitz in FL. Kein Antrag nötig – direkt beim Zahnarzt einlösen. Alle zur Kinder- und Jugendzahnpflege zugelassenen Zahnärzte in Liechtenstein akzeptieren den Tarif. Eigenanteil der Familie: 60%. Für Spezialbehandlungen (Kieferorthopädie): Überweisung durch Zahnarzt + Voranmeldung beim Amt für Gesundheit ZWINGEND vor der Behandlung. Gilt bis zum 18. Geburtstag.",
     "website": "https://www.llv.li/de/landesverwaltung/amt-fuer-gesundheit",
     "tags": [
       "zahnarzt",
@@ -2295,6 +2472,9 @@
       "gesundheit",
       "zahn",
       "zahnpflege"
-    ]
+    ],
+    "kontakt_email": "info.ag@llv.li",
+    "kontakt_tel": "+423 236 73 48",
+    "antrag_url": "https://www.llv.li/de/privatpersonen/gesundheit-vorsorge-und-pflege/gesundheit-und-praevention/zahnpflege"
   }
 ]
