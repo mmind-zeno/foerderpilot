@@ -28,6 +28,12 @@ export const PROVIDER_LABELS: Record<LLMProvider, string> = {
 export const OPENAI_MODELS = ['gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-4', 'o1-mini', 'o3-mini']
 export const GEMINI_MODELS = ['gemini-2.0-flash', 'gemini-2.0-flash-lite', 'gemini-1.5-pro', 'gemini-1.5-flash']
 export const OPENROUTER_MODELS = [
+  // ── Gratis (empfohlen für Produktion) ──
+  'google/gemini-2.0-flash-exp:free',       // ★ Beste Wahl: 1M Kontext, gutes Deutsch, JSON-sicher
+  'meta-llama/llama-3.3-70b-instruct:free', // ★ Llama 70B: explizit Deutsch, 128k Kontext
+  'deepseek/deepseek-v3-0324:free',         // DeepSeek V3: starkes Reasoning
+  'mistralai/mistral-small-3.1-24b-instruct:free', // Mistral: 128k, multilingual
+  // ── Bezahlmodelle ──
   'openai/gpt-4o',
   'openai/gpt-4o-mini',
   'anthropic/claude-sonnet-4-5',
