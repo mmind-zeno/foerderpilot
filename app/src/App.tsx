@@ -11,7 +11,7 @@ import LoadingSkeleton from './components/LoadingSkeleton'
 import DatenschutzModal from './components/DatenschutzModal'
 import AdminPanel from './components/AdminPanel'
 
-const APP_VERSION = '1.4.0'
+const APP_VERSION = '1.5.0'
 const SESSION_KEY = 'foerderpilot_last_result'
 const SESSION_INPUT_KEY = 'foerderpilot_last_input'
 

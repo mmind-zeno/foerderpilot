@@ -18,6 +18,74 @@ const FRIST_COLOR: Record<string, string> = {
   periodisch: 'bg-slate-100 text-slate-700',
 }
 
+// Category config: icon + color scheme (inactive / active handled by selected state)
+const KAT_CONFIG: Record<string, { icon: string; pill: string; pillActive: string }> = {
+  'Wirtschaft & Innovation': {
+    icon: '💡',
+    pill: 'bg-blue-50 text-blue-700 ring-1 ring-blue-200 hover:ring-blue-400',
+    pillActive: 'bg-blue-600 text-white ring-1 ring-blue-600',
+  },
+  'Gründung & Venture': {
+    icon: '🚀',
+    pill: 'bg-violet-50 text-violet-700 ring-1 ring-violet-200 hover:ring-violet-400',
+    pillActive: 'bg-violet-600 text-white ring-1 ring-violet-600',
+  },
+  'Energie & Umwelt': {
+    icon: '🌱',
+    pill: 'bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 hover:ring-emerald-400',
+    pillActive: 'bg-emerald-600 text-white ring-1 ring-emerald-600',
+  },
+  'Kultur & Medien': {
+    icon: '🎨',
+    pill: 'bg-rose-50 text-rose-700 ring-1 ring-rose-200 hover:ring-rose-400',
+    pillActive: 'bg-rose-600 text-white ring-1 ring-rose-600',
+  },
+  'Bildung & Forschung': {
+    icon: '🎓',
+    pill: 'bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200 hover:ring-indigo-400',
+    pillActive: 'bg-indigo-600 text-white ring-1 ring-indigo-600',
+  },
+  'Jugend & Soziales': {
+    icon: '🤝',
+    pill: 'bg-amber-50 text-amber-700 ring-1 ring-amber-200 hover:ring-amber-400',
+    pillActive: 'bg-amber-500 text-white ring-1 ring-amber-500',
+  },
+  'Landwirtschaft & Umwelt': {
+    icon: '🌾',
+    pill: 'bg-lime-50 text-lime-700 ring-1 ring-lime-200 hover:ring-lime-400',
+    pillActive: 'bg-lime-600 text-white ring-1 ring-lime-600',
+  },
+  'Regional & International': {
+    icon: '🌍',
+    pill: 'bg-cyan-50 text-cyan-700 ring-1 ring-cyan-200 hover:ring-cyan-400',
+    pillActive: 'bg-cyan-600 text-white ring-1 ring-cyan-600',
+  },
+  'Stiftungen': {
+    icon: '🏛️',
+    pill: 'bg-orange-50 text-orange-700 ring-1 ring-orange-200 hover:ring-orange-400',
+    pillActive: 'bg-orange-500 text-white ring-1 ring-orange-500',
+  },
+  'Beratung & Information': {
+    icon: 'ℹ️',
+    pill: 'bg-slate-100 text-slate-600 ring-1 ring-slate-200 hover:ring-slate-400',
+    pillActive: 'bg-slate-600 text-white ring-1 ring-slate-600',
+  },
+}
+
+// Small category dot for card rows
+const KAT_DOT: Record<string, string> = {
+  'Wirtschaft & Innovation': 'bg-blue-400',
+  'Gründung & Venture': 'bg-violet-500',
+  'Energie & Umwelt': 'bg-emerald-500',
+  'Kultur & Medien': 'bg-rose-400',
+  'Bildung & Forschung': 'bg-indigo-400',
+  'Jugend & Soziales': 'bg-amber-400',
+  'Landwirtschaft & Umwelt': 'bg-lime-500',
+  'Regional & International': 'bg-cyan-500',
+  'Stiftungen': 'bg-orange-400',
+  'Beratung & Information': 'bg-slate-400',
+}
+
 export default function FilterCatalog() {
   const [search, setSearch] = useState('')
   const [selectedKat, setSelectedKat] = useState('')
@@ -40,19 +108,20 @@ export default function FilterCatalog() {
   }, [search, selectedKat, selectedFrist])
 
   const toggleExpand = (id: number) => setExpanded(prev => prev === id ? null : id)
+  const hasFilters = search || selectedKat || selectedFrist
 
   return (
     <div className="animate-fade-in">
       {/* Header */}
       <div className="mb-6">
         <h2 className="font-headline text-2xl font-semibold text-[#1A1A1A] mb-1">
-          Alle 100 Förderungen in Liechtenstein
+          Alle {foerderungenData.length} Förderungen in Liechtenstein
         </h2>
         <p className="text-sm text-[#6B6860]">Stand März 2026 · Ohne Gewähr · Klicke eine Förderung für Details</p>
       </div>
 
-      {/* Filter-Leiste */}
-      <div className="bg-white border border-[#D4D1CB] rounded-xl p-4 mb-5 flex flex-col sm:flex-row gap-3 shadow-sm">
+      {/* Search + Frist filter row */}
+      <div className="bg-white border border-[#D4D1CB] rounded-xl p-4 mb-3 flex flex-col sm:flex-row gap-3 shadow-sm">
         <div className="flex-1 relative">
           <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-[#9B998F]" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" strokeWidth="1.4" />
@@ -67,16 +136,6 @@ export default function FilterCatalog() {
           />
         </div>
         <select
-          value={selectedKat}
-          onChange={(e) => setSelectedKat(e.target.value)}
-          className="text-sm border border-[#D4D1CB] rounded-lg px-3 py-2 bg-[#F8F7F4] focus:outline-none focus:ring-2 focus:ring-[#0D4F6B]/30 focus:border-[#0D4F6B] text-[#1A1A1A]"
-        >
-          <option value="">Alle Kategorien</option>
-          {KATEGORIEN.map((k) => (
-            <option key={k} value={k}>{k}</option>
-          ))}
-        </select>
-        <select
           value={selectedFrist}
           onChange={(e) => setSelectedFrist(e.target.value)}
           className="text-sm border border-[#D4D1CB] rounded-lg px-3 py-2 bg-[#F8F7F4] focus:outline-none focus:ring-2 focus:ring-[#0D4F6B]/30 focus:border-[#0D4F6B] text-[#1A1A1A]"
@@ -85,7 +144,7 @@ export default function FilterCatalog() {
             <option key={ft.value} value={ft.value}>{ft.label}</option>
           ))}
         </select>
-        {(search || selectedKat || selectedFrist) && (
+        {hasFilters && (
           <button
             onClick={() => { setSearch(''); setSelectedKat(''); setSelectedFrist(''); setExpanded(null) }}
             className="text-sm text-[#6B6860] hover:text-[#E8530A] transition-colors px-2 whitespace-nowrap"
@@ -95,9 +154,48 @@ export default function FilterCatalog() {
         )}
       </div>
 
+      {/* Category pills — horizontal scroll */}
+      <div className="flex gap-2 overflow-x-auto pb-1 mb-4 snap-x" style={{ scrollbarWidth: 'none' }}>
+        {/* All button */}
+        <button
+          onClick={() => { setSelectedKat(''); setExpanded(null) }}
+          className={`shrink-0 snap-start text-[12px] font-semibold px-3 py-1.5 rounded-full transition-all whitespace-nowrap ${
+            selectedKat === ''
+              ? 'bg-[#0D4F6B] text-white shadow-sm'
+              : 'bg-[#EAE8E4] text-[#6B6860] hover:bg-[#D4D1CB]'
+          }`}
+        >
+          Alle ({foerderungenData.length})
+        </button>
+
+        {KATEGORIEN.map((k) => {
+          const cfg = KAT_CONFIG[k]
+          const count = foerderungenData.filter(f => f.kategorie === k).length
+          const isActive = selectedKat === k
+          return (
+            <button
+              key={k}
+              onClick={() => { setSelectedKat(isActive ? '' : k); setExpanded(null) }}
+              className={`shrink-0 snap-start flex items-center gap-1.5 text-[12px] font-semibold px-3 py-1.5 rounded-full transition-all whitespace-nowrap ${
+                isActive ? cfg?.pillActive : cfg?.pill
+              }`}
+            >
+              <span>{cfg?.icon}</span>
+              <span>{k}</span>
+              <span className={isActive ? 'opacity-70' : 'opacity-50'}>({count})</span>
+            </button>
+          )
+        })}
+      </div>
+
       {/* Counter */}
       <p className="text-sm text-[#6B6860] mb-4">
-        <span className="font-semibold text-[#1A1A1A]">{filtered.length}</span> von 100 Förderungen
+        <span className="font-semibold text-[#1A1A1A]">{filtered.length}</span> von {foerderungenData.length} Förderungen
+        {selectedKat && (
+          <span className="ml-2 text-[11px] bg-[#EAE8E4] text-[#6B6860] px-2 py-0.5 rounded-full">
+            {KAT_CONFIG[selectedKat]?.icon} {selectedKat}
+          </span>
+        )}
       </p>
 
       {/* Liste */}
@@ -113,7 +211,7 @@ export default function FilterCatalog() {
               key={f.id}
               className="bg-white border border-[#D4D1CB] rounded-xl overflow-hidden hover:border-[#0D4F6B]/30 transition-colors shadow-sm"
             >
-              {/* Summary row (always visible, clickable) */}
+              {/* Summary row */}
               <button
                 className="w-full text-left p-5"
                 onClick={() => toggleExpand(f.id)}
@@ -123,7 +221,11 @@ export default function FilterCatalog() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-3">
                       <div className="min-w-0">
-                        <h3 className="font-semibold text-[#1A1A1A] text-[15px] leading-snug">{f.name}</h3>
+                        <div className="flex items-center gap-2 mb-0.5">
+                          {/* Category color dot */}
+                          <span className={`inline-block w-2 h-2 rounded-full shrink-0 ${KAT_DOT[f.kategorie] ?? 'bg-gray-300'}`} />
+                          <h3 className="font-semibold text-[#1A1A1A] text-[15px] leading-snug">{f.name}</h3>
+                        </div>
                         <p className="text-xs text-[#6B6860] mt-0.5">{f.anbieter}</p>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
@@ -140,7 +242,7 @@ export default function FilterCatalog() {
                     {/* Quick meta */}
                     <div className="flex flex-wrap gap-x-4 gap-y-1 text-[12px] text-[#6B6860] mt-2">
                       <span><span className="text-[#9B998F]">Förderung:</span> {f.foerderumfang}</span>
-                      <span><span className="text-[#9B998F]">Kategorie:</span> {f.kategorie}</span>
+                      <span><span className="text-[#9B998F]">Kategorie:</span> {KAT_CONFIG[f.kategorie]?.icon} {f.kategorie}</span>
                     </div>
 
                     {/* Zielgruppe tags */}

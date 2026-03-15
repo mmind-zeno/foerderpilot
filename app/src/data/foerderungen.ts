@@ -5,6 +5,7 @@ export const foerderungenData: Foerderung[] = rawData as Foerderung[]
 
 export const KATEGORIEN = [
   'Wirtschaft & Innovation',
+  'Gründung & Venture',
   'Energie & Umwelt',
   'Kultur & Medien',
   'Bildung & Forschung',
