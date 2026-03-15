@@ -35,7 +35,8 @@
       "Bash(ls \"C:/_DATA/600_github/foerderpilot/pics/\" && identify \"C:/_DATA/600_github/foerderpilot/pics/foerderpilot-header-1.png\" 2>/dev/null || file \"C:/_DATA/600_github/foerderpilot/pics/foerderpilot-header-1.png\")",
       "Bash(wc -c \"C:/_DATA/600_github/foerderpilot/pics/foerderpilot-header-1.png\")",
       "Bash(node \"C:/_DATA/600_github/foerderpilot/optimize-image.js\" 2>&1)",
-      "Bash(scp \"C:/_DATA/600_github/foerderpilot/app/dist/index.html\" hetzner:/opt/foerderpilot/static/index.html 2>&1)"
+      "Bash(scp \"C:/_DATA/600_github/foerderpilot/app/dist/index.html\" hetzner:/opt/foerderpilot/static/index.html 2>&1)",
+      "Bash(cp \"C:/_DATA/600_github/foerderpilot/app/dist/index.html\" \"C:/_DATA/600_github/foerderpilot/bundle.html\" && scp \"C:/_DATA/600_github/foerderpilot/app/dist/index.html\" hetzner:/opt/foerderpilot/static/index.html && echo \"deployed\")"
     ]
   }
 }

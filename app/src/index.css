@@ -20,6 +20,13 @@
 }
 
 @layer utilities {
+  /* App root background with subtle dot texture */
+  .app-root {
+    background-color: #F5F3EF;
+    background-image: radial-gradient(circle, rgba(13,79,107,0.045) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
   /* Shimmer skeleton */
   .shimmer-bg {
     background: linear-gradient(90deg, #EAE8E4 25%, #F0EEE9 50%, #EAE8E4 75%);
@@ -53,10 +60,10 @@
   .hero-text-item:nth-child(5) { animation-delay: 16s; }
 
   @keyframes heroTextCycle {
-    0%     { opacity: 0; transform: translateY(12px); }
-    5%     { opacity: 1; transform: translateY(0); }
+    0%     { opacity: 0; transform: translateY(14px); }
+    6%     { opacity: 1; transform: translateY(0); }
     18%    { opacity: 1; transform: translateY(0); }
-    23%    { opacity: 0; transform: translateY(-10px); }
+    24%    { opacity: 0; transform: translateY(-10px); }
     100%   { opacity: 0; transform: translateY(0); }
   }
 
@@ -65,8 +72,21 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   }
   .card-hover:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(13, 79, 107, 0.10);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(13, 79, 107, 0.13);
+    border-color: rgba(13, 79, 107, 0.25) !important;
+  }
+
+  /* Priority card — left accent bar */
+  .card-priority {
+    border-left-width: 3px !important;
+    border-left-color: #E8530A !important;
+    background: linear-gradient(to right, rgba(232, 83, 10, 0.025), transparent 60px) !important;
+  }
+
+  /* Accent glow button */
+  .btn-glow:hover {
+    box-shadow: 0 6px 24px rgba(232, 83, 10, 0.35);
   }
 
   .line-clamp-3 {

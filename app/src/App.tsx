@@ -1,14 +1,17 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import type { ApiResponse, AppView, AppTab } from './types'
 import { findFoerderungen } from './lib/api'
 import { preFilterFoerderungen } from './lib/preFilter'
 import { foerderungenData } from './data/foerderungen'
 import Hero from './components/Hero'
+import HeroBanner from './components/HeroBanner'
 import ResultCards from './components/ResultCards'
 import FilterCatalog from './components/FilterCatalog'
 import LoadingSkeleton from './components/LoadingSkeleton'
 import DatenschutzModal from './components/DatenschutzModal'
+import AdminPanel from './components/AdminPanel'
 
+const APP_VERSION = '1.2.0'
 const SESSION_KEY = 'foerderpilot_last_result'
 const SESSION_INPUT_KEY = 'foerderpilot_last_input'
 
@@ -36,6 +39,18 @@ export default function App() {
   const [userInput, setUserInput] = useState(stored?.input ?? '')
   const [error, setError] = useState<string | null>(null)
   const [showDatenschutz, setShowDatenschutz] = useState(false)
+  const [showAdmin, setShowAdmin] = useState(() => window.location.hash === '#admin')
+
+  useEffect(() => {
+    const handler = () => setShowAdmin(window.location.hash === '#admin')
+    window.addEventListener('hashchange', handler)
+    return () => window.removeEventListener('hashchange', handler)
+  }, [])
+
+  const handleAdminExit = useCallback(() => {
+    window.location.hash = ''
+    setShowAdmin(false)
+  }, [])
 
   const handleSearch = useCallback(async (input: string) => {
     setUserInput(input)
@@ -66,28 +81,35 @@ export default function App() {
     } catch { /* ignore */ }
   }, [])
 
+  const showHeroBanner = tab === 'search' && view === 'hero'
+
   return (
-    <div className="min-h-screen bg-[#F5F3EF] font-body">
+    <div className="min-h-screen app-root font-body">
+
+      {/* Admin Panel */}
+      {showAdmin && <AdminPanel onExit={handleAdminExit} version={APP_VERSION} />}
+
       {/* Datenschutz Modal */}
       {showDatenschutz && <DatenschutzModal onClose={() => setShowDatenschutz(false)} />}
 
       {/* Navigation */}
-      <header className="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-[#D4D1CB] shadow-sm">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-between h-14">
+      <header className="sticky top-0 z-20 bg-white/95 backdrop-blur-md border-b border-[#D4D1CB] shadow-sm">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+
             {/* Logo */}
             <button
               onClick={handleReset}
-              className="flex items-center gap-2.5 hover:opacity-80 transition-opacity group"
+              className="flex items-center gap-3 hover:opacity-80 transition-opacity group"
             >
-              <div className="w-8 h-8 rounded-xl flex items-center justify-center shadow-sm"
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center shadow-md"
                 style={{ background: 'linear-gradient(135deg, #0D4F6B 0%, #1a6d8f 100%)' }}>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <svg width="17" height="17" viewBox="0 0 16 16" fill="none">
                   <path d="M8 1.5L10.2 6.5H15.5L11.2 9.5L13 14.5L8 11.5L3 14.5L4.8 9.5L0.5 6.5H5.8L8 1.5Z" fill="white" />
                 </svg>
               </div>
               <div>
-                <span className="font-headline font-bold text-[#1A1A1A] text-[15px] leading-none block">
+                <span className="font-headline font-bold text-[#1A1A1A] text-[16px] leading-none block">
                   Förderpilot
                 </span>
                 <span className="text-[10px] text-[#9B998F] leading-none">by mmind.ai</span>
@@ -98,7 +120,7 @@ export default function App() {
             <div className="flex items-center bg-[#F0EDE6] rounded-xl p-1 gap-0.5">
               <button
                 onClick={() => setTab('search')}
-                className={`px-4 py-1.5 text-[13px] font-semibold rounded-lg transition-all duration-150 ${
+                className={`px-4 py-2 text-[13px] font-semibold rounded-lg transition-all duration-150 ${
                   tab === 'search'
                     ? 'bg-white text-[#1A1A1A] shadow-sm'
                     : 'text-[#9B998F] hover:text-[#1A1A1A]'
@@ -108,7 +130,7 @@ export default function App() {
               </button>
               <button
                 onClick={() => setTab('catalog')}
-                className={`px-4 py-1.5 text-[13px] font-semibold rounded-lg transition-all duration-150 ${
+                className={`px-4 py-2 text-[13px] font-semibold rounded-lg transition-all duration-150 ${
                   tab === 'catalog'
                     ? 'bg-white text-[#1A1A1A] shadow-sm'
                     : 'text-[#9B998F] hover:text-[#1A1A1A]'
@@ -121,7 +143,7 @@ export default function App() {
             {/* Datenschutz */}
             <button
               onClick={() => setShowDatenschutz(true)}
-              className="text-[12px] text-[#B0ADA5] hover:text-[#0D4F6B] transition-colors hidden sm:flex items-center gap-1"
+              className="text-[12px] text-[#B0ADA5] hover:text-[#0D4F6B] transition-colors hidden sm:flex items-center gap-1.5"
             >
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                 <path d="M6 1L1.5 3V6C1.5 8.3 3.5 10.46 6 11C8.5 10.46 10.5 8.3 10.5 6V3L6 1Z"
@@ -133,8 +155,11 @@ export default function App() {
         </div>
       </header>
 
+      {/* Full-width Hero Banner — outside the constrained container */}
+      {showHeroBanner && <HeroBanner />}
+
       {/* Main */}
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-8 pb-16">
+      <main className={`max-w-3xl mx-auto px-4 sm:px-6 pb-16 ${showHeroBanner ? 'pt-6' : 'pt-8'}`}>
         {tab === 'catalog' ? (
           <FilterCatalog />
         ) : (
@@ -188,9 +213,9 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-[#D4D1CB] bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-5">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-[#B0ADA5]">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2.5">
               <div className="w-5 h-5 rounded-md flex items-center justify-center"
                 style={{ background: 'linear-gradient(135deg, #0D4F6B, #1a6d8f)' }}>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
@@ -202,6 +227,9 @@ export default function App() {
                 {' – '}
                 <a href="https://mmind.ai" target="_blank" rel="noopener noreferrer"
                   className="hover:text-[#0D4F6B] transition-colors">powered by mmind.ai</a>
+              </span>
+              <span className="bg-[#EAE8E4] text-[#9B998F] text-[10px] px-1.5 py-0.5 rounded font-mono">
+                v{APP_VERSION}
               </span>
             </div>
             <div className="flex flex-wrap items-center gap-3 justify-center text-center">
