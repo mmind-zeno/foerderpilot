@@ -47,7 +47,7 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
             Beschreibe deine Situation
           </h2>
           <p className="text-sm text-[#9B998F]">
-            Unsere KI analysiert 104 Förderungen und findet die passenden für dich.
+            Unsere KI analysiert 103 Förderungen und findet die passenden für dich.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
                   <path d="M8 1L10 6H15L11 9L12.5 14L8 11L3.5 14L5 9L1 6H6L8 1Z" fill="currentColor" />
                 </svg>
               ),
-              text: '104 Förderungen erfasst',
+              text: '103 Förderungen erfasst',
             },
             {
               icon: (

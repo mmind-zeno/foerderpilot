@@ -1,7 +1,7 @@
 import headerImg from '../assets/header-v2.png'
 
 const HEADLINES = [
-  { sub: 'Liechtenstein · 104 Förderungen', main: 'Welche Förderung passt zu dir?' },
+  { sub: 'Liechtenstein · 103 Förderungen', main: 'Welche Förderung passt zu dir?' },
   { sub: 'KI-gestützte Suche', main: 'In Sekunden zur richtigen Förderung.' },
   { sub: 'Wirtschaft · Kultur · Bildung · Umwelt', main: 'Alles auf einen Blick.' },
   { sub: 'Unternehmen, Privatpersonen & Organisationen', main: 'Dein persönlicher Förderpilot.' },
@@ -56,7 +56,7 @@ export default function HeroBanner() {
         style={{ background: 'linear-gradient(to top, rgba(9,56,71,0.90), transparent)' }}>
         <div className="flex items-center gap-2.5">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse inline-block shadow-sm" />
-          <span className="text-white/80 text-xs font-semibold tracking-wide">104 Förderungen · Stand März 2026</span>
+          <span className="text-white/80 text-xs font-semibold tracking-wide">103 Förderungen · Stand März 2026</span>
         </div>
         <span className="text-white/40 text-xs font-mono hidden sm:block">foerderpilot.mmind.space</span>
       </div>

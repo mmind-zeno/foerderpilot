@@ -114,7 +114,7 @@ export default function FilterCatalog() {
       <div className="lg:flex lg:gap-8 lg:items-start">
 
         {/* ── Sidebar ── */}
-        <aside className="w-full lg:w-64 xl:w-72 shrink-0 mb-5 lg:mb-0 lg:sticky lg:top-20 lg:max-h-[calc(100vh-5.5rem)] lg:overflow-y-auto">
+        <aside className="w-full lg:w-64 xl:w-72 shrink-0 mb-5 lg:mb-0 lg:sticky lg:top-[4.5rem] lg:max-h-[calc(100vh-5rem)] lg:overflow-y-auto">
 
           {/* Header */}
           <div className="mb-5">

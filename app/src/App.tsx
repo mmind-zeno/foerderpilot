@@ -10,8 +10,9 @@ import FilterCatalog from './components/FilterCatalog'
 import LoadingSkeleton from './components/LoadingSkeleton'
 import DatenschutzModal from './components/DatenschutzModal'
 import AdminPanel from './components/AdminPanel'
+import mmindLogo from './assets/logo_mmind.svg'
 
-const APP_VERSION = '1.6.0'
+const APP_VERSION = '1.7.0'
 const SESSION_KEY = 'foerderpilot_last_result'
 const SESSION_INPUT_KEY = 'foerderpilot_last_input'
 
@@ -94,53 +95,55 @@ export default function App() {
 
       {/* Navigation */}
       <header className="sticky top-0 z-20 bg-white/95 backdrop-blur-md border-b border-[#D4D1CB] shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Top row: Logo + Desktop Tabs + Datenschutz */}
+          <div className="flex items-center justify-between h-14 sm:h-16">
 
             {/* Logo */}
             <button
               onClick={handleReset}
-              className="flex items-center gap-3 hover:opacity-80 transition-opacity group"
+              className="flex items-center gap-2.5 hover:opacity-80 transition-opacity"
             >
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center shadow-md"
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center shadow-md shrink-0"
                 style={{ background: 'linear-gradient(135deg, #0D4F6B 0%, #1a6d8f 100%)' }}>
-                <svg width="17" height="17" viewBox="0 0 16 16" fill="none">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M8 1.5L10.2 6.5H15.5L11.2 9.5L13 14.5L8 11.5L3 14.5L4.8 9.5L0.5 6.5H5.8L8 1.5Z" fill="white" />
                 </svg>
               </div>
               <div>
-                <span className="font-headline font-bold text-[#1A1A1A] text-[16px] leading-none block">
+                <span className="font-headline font-bold text-[#1A1A1A] text-[15px] sm:text-[16px] leading-none block">
                   Förderpilot
                 </span>
                 <span className="text-[10px] text-[#9B998F] leading-none">by mmind.ai</span>
               </div>
             </button>
 
-            {/* Tabs */}
-            <div className="flex items-center bg-[#F0EDE6] rounded-xl p-1 gap-0.5">
+            {/* Desktop Tabs (hidden on mobile) */}
+            <div className="hidden sm:flex items-center bg-[#F0EDE6] rounded-xl p-1 gap-0.5">
               <button
                 onClick={() => setTab('search')}
-                className={`px-4 py-2 text-[13px] font-semibold rounded-lg transition-all duration-150 ${
+                className={`px-5 py-2.5 text-[13px] font-semibold rounded-lg transition-all duration-150 ${
                   tab === 'search'
                     ? 'bg-white text-[#1A1A1A] shadow-sm'
                     : 'text-[#9B998F] hover:text-[#1A1A1A]'
                 }`}
               >
-                KI-Suche
+                🔍 KI-Suche
               </button>
               <button
                 onClick={() => setTab('catalog')}
-                className={`px-4 py-2 text-[13px] font-semibold rounded-lg transition-all duration-150 ${
+                className={`px-5 py-2.5 text-[13px] font-semibold rounded-lg transition-all duration-150 ${
                   tab === 'catalog'
                     ? 'bg-white text-[#1A1A1A] shadow-sm'
                     : 'text-[#9B998F] hover:text-[#1A1A1A]'
                 }`}
               >
-                Alle Förderungen
+                📋 Alle Förderungen
               </button>
             </div>
 
-            {/* Datenschutz */}
+            {/* Datenschutz (desktop only) */}
             <button
               onClick={() => setShowDatenschutz(true)}
               className="text-[12px] text-[#B0ADA5] hover:text-[#0D4F6B] transition-colors hidden sm:flex items-center gap-1.5"
@@ -152,6 +155,41 @@ export default function App() {
               Datenschutz
             </button>
           </div>
+
+          {/* Mobile Tab Bar (hidden on sm+) */}
+          <div className="sm:hidden flex -mx-4 border-t border-[#EAE8E4]">
+            <button
+              onClick={() => setTab('search')}
+              className={`flex-1 flex items-center justify-center gap-2 py-3 text-[13px] font-semibold transition-all border-b-2 ${
+                tab === 'search'
+                  ? 'border-[#0D4F6B] text-[#0D4F6B] bg-[#F0F7FB]'
+                  : 'border-transparent text-[#9B998F] hover:text-[#1A1A1A]'
+              }`}
+            >
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <circle cx="6" cy="6" r="4.5" stroke="currentColor" strokeWidth="1.5" />
+                <path d="M9.5 9.5L12.5 12.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
+              KI-Suche
+            </button>
+            <div className="w-px bg-[#EAE8E4] my-1.5" />
+            <button
+              onClick={() => setTab('catalog')}
+              className={`flex-1 flex items-center justify-center gap-2 py-3 text-[13px] font-semibold transition-all border-b-2 ${
+                tab === 'catalog'
+                  ? 'border-[#0D4F6B] text-[#0D4F6B] bg-[#F0F7FB]'
+                  : 'border-transparent text-[#9B998F] hover:text-[#1A1A1A]'
+              }`}
+            >
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <rect x="1" y="2" width="12" height="2" rx="1" fill="currentColor" />
+                <rect x="1" y="6" width="12" height="2" rx="1" fill="currentColor" />
+                <rect x="1" y="10" width="8" height="2" rx="1" fill="currentColor" />
+              </svg>
+              Alle Förderungen
+            </button>
+          </div>
+
         </div>
       </header>
 
@@ -213,21 +251,22 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-[#D4D1CB] bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-[#B0ADA5]">
-            <div className="flex items-center gap-2.5">
-              <div className="w-5 h-5 rounded-md flex items-center justify-center"
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-[#B0ADA5]">
+            <div className="flex items-center gap-3">
+              <div className="w-5 h-5 rounded-md flex items-center justify-center shrink-0"
                 style={{ background: 'linear-gradient(135deg, #0D4F6B, #1a6d8f)' }}>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
                   <path d="M5.5 1L7 4.5H10.5L7.5 6.5L8.5 10L5.5 8L2.5 10L3.5 6.5L0.5 4.5H4L5.5 1Z" fill="white" />
                 </svg>
               </div>
-              <span>
-                <strong className="text-[#6B6860]">Förderpilot</strong>
-                {' – '}
-                <a href="https://mmind.ai" target="_blank" rel="noopener noreferrer"
-                  className="hover:text-[#0D4F6B] transition-colors">powered by mmind.ai</a>
-              </span>
+              <span className="font-semibold text-[#6B6860]">Förderpilot</span>
+              <span className="opacity-30">–</span>
+              <span>powered by</span>
+              <a href="https://mmind.ai" target="_blank" rel="noopener noreferrer"
+                className="opacity-70 hover:opacity-100 transition-opacity">
+                <img src={mmindLogo} alt="mmind.ai" className="h-[14px] w-auto" />
+              </a>
               <span className="bg-[#EAE8E4] text-[#9B998F] text-[10px] px-1.5 py-0.5 rounded font-mono">
                 v{APP_VERSION}
               </span>

@@ -280,28 +280,6 @@
     "antrag_url": "https://wirtschaftskammer.li/"
   },
   {
-    "id": 12,
-    "name": "digihub.li - Förderberatung",
-    "anbieter": "digihub.li",
-    "kategorie": "Wirtschaft & Innovation",
-    "zielgruppe": [
-      "Alle"
-    ],
-    "zielgruppe_text": "Alle Antragsteller",
-    "foerderumfang": "Beratungsservices (kostenlos)",
-    "foerderumfang_max_chf": null,
-    "antragsfrist": "Direkter Zugang",
-    "frist_typ": "laufend",
-    "bedingungen": "digihub.li ist eine unabhängige Förderberatungsplattform für liechtensteinische Unternehmen und Privatpersonen. Kostenloser Service: Übersicht über verfügbare Förderungen, individuelle Beratung zur Antragstellung, Identifikation der geeigneten Fördermittel. Kein formaler Antragsprozess erforderlich – einfach Kontakt aufnehmen. Besonders nützlich für Erstantragsteller ohne Erfahrung mit Förderprogrammen.",
-    "website": "https://digihub.li/services/foerderberatung/",
-    "tags": [
-      "beratung",
-      "digitalisierung",
-      "kostenlos"
-    ],
-    "antrag_url": "https://digihub.li/services/foerderberatung/"
-  },
-  {
     "id": 13,
     "name": "Startup-Förderung",
     "anbieter": "Amt für Volkswirtschaft",
