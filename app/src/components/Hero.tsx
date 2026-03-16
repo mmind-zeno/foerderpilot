@@ -2,6 +2,7 @@ import { useState, useRef, useCallback } from 'react'
 
 const QUICK_STARTS = [
   { label: '🏢 KMU', text: 'Ich betreibe ein KMU in Liechtenstein mit 15 Mitarbeitenden und möchte ein Digitalisierungsprojekt starten.' },
+  { label: '🚀 Startup', text: 'Ich gründe ein Startup in Liechtenstein und suche Finanzierung, Mentoring oder Unterstützung für den Aufbau meines Unternehmens.' },
   { label: '🏠 Hausbau', text: 'Ich plane ein Eigenheim in Liechtenstein und möchte es energieeffizient bauen oder sanieren.' },
   { label: '🎨 Kultur', text: 'Ich bin eine professionelle Künstlerin mit Wohnsitz in Liechtenstein und suche Förderung für mein Kulturprojekt.' },
   { label: '🎓 Studium', text: 'Ich studiere in Liechtenstein und suche Stipendien oder Bildungsförderung.' },
@@ -46,7 +47,7 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
             Beschreibe deine Situation
           </h2>
           <p className="text-sm text-[#9B998F]">
-            Unsere KI analysiert 100+ Förderungen und findet die passenden für dich.
+            Unsere KI analysiert 104 Förderungen und findet die passenden für dich.
           </p>
         </div>
 
@@ -111,13 +112,13 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
           <p className="text-xs text-[#B0ADA5] text-center mb-3 font-medium tracking-widest uppercase">
             Schnellstart
           </p>
-          <div className="flex flex-wrap gap-2 justify-center">
+          <div className="flex gap-2 overflow-x-auto pb-1 snap-x justify-start sm:justify-center sm:flex-wrap" style={{ scrollbarWidth: 'none' }}>
             {QUICK_STARTS.map(({ label, text }) => (
               <button
                 key={label}
                 onClick={() => handleQuickStart(text)}
                 disabled={isLoading}
-                className="text-[13px] bg-white border border-[#D4D1CB] text-[#6B6860] hover:border-[#0D4F6B] hover:text-[#0D4F6B] hover:bg-[#F0F7FB] hover:shadow-sm px-4 py-2 rounded-full transition-all duration-150 disabled:opacity-50 shadow-sm font-medium"
+                className="shrink-0 snap-start text-[13px] bg-white border border-[#D4D1CB] text-[#6B6860] hover:border-[#0D4F6B] hover:text-[#0D4F6B] hover:bg-[#F0F7FB] hover:shadow-sm px-4 py-2 rounded-full transition-all duration-150 disabled:opacity-50 shadow-sm font-medium"
               >
                 {label}
               </button>
@@ -136,7 +137,7 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
                   <path d="M8 1L10 6H15L11 9L12.5 14L8 11L3.5 14L5 9L1 6H6L8 1Z" fill="currentColor" />
                 </svg>
               ),
-              text: '100 Förderungen erfasst',
+              text: '104 Förderungen erfasst',
             },
             {
               icon: (

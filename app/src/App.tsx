@@ -11,7 +11,7 @@ import LoadingSkeleton from './components/LoadingSkeleton'
 import DatenschutzModal from './components/DatenschutzModal'
 import AdminPanel from './components/AdminPanel'
 
-const APP_VERSION = '1.5.0'
+const APP_VERSION = '1.6.0'
 const SESSION_KEY = 'foerderpilot_last_result'
 const SESSION_INPUT_KEY = 'foerderpilot_last_input'
 
@@ -159,11 +159,11 @@ export default function App() {
       {showHeroBanner && <HeroBanner />}
 
       {/* Main */}
-      <main className={`max-w-3xl mx-auto px-4 sm:px-6 pb-16 ${showHeroBanner ? 'pt-6' : 'pt-8'}`}>
+      <main className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 ${showHeroBanner ? 'pt-6' : 'pt-8'}`}>
         {tab === 'catalog' ? (
           <FilterCatalog />
         ) : (
-          <>
+          <div className="max-w-3xl mx-auto">
             {/* Fehler-Banner */}
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-2xl p-5 mb-6 animate-fade-in">
@@ -207,7 +207,7 @@ export default function App() {
                 onDatenschutz={() => setShowDatenschutz(true)}
               />
             )}
-          </>
+          </div>
         )}
       </main>
 
