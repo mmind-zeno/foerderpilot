@@ -28,28 +28,41 @@ export const PROVIDER_LABELS: Record<LLMProvider, string> = {
 export const OPENAI_MODELS = ['gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-4', 'o1-mini', 'o3-mini']
 export const GEMINI_MODELS = ['gemini-2.0-flash', 'gemini-2.0-flash-lite', 'gemini-1.5-pro', 'gemini-1.5-flash']
 export const OPENROUTER_MODELS = [
-  // ── Gratis (empfohlen für Produktion) ──
-  'google/gemini-2.0-flash-exp:free',       // ★ Beste Wahl: 1M Kontext, gutes Deutsch, JSON-sicher
-  'meta-llama/llama-3.3-70b-instruct:free', // ★ Llama 70B: explizit Deutsch, 128k Kontext
-  'deepseek/deepseek-v3-0324:free',         // DeepSeek V3: starkes Reasoning
-  'mistralai/mistral-small-3.1-24b-instruct:free', // Mistral: 128k, multilingual
-  // ── Bezahlmodelle ──
+  // ── Empfohlen ──
+  'google/gemini-2.0-flash-001',            // ★ Standard: schnell, Deutsch, günstig
+  'google/gemini-2.5-flash-preview-05-20',  // Gemini 2.5 Flash Preview
+  'meta-llama/llama-3.3-70b-instruct',      // Llama 70B: 128k Kontext
+  'deepseek/deepseek-chat-v3-0324',         // DeepSeek V3
+  // ── Weitere ──
   'openai/gpt-4o',
   'openai/gpt-4o-mini',
   'anthropic/claude-sonnet-4-5',
   'anthropic/claude-3-5-haiku',
-  'google/gemini-2.0-flash-001',
-  'meta-llama/llama-3.3-70b-instruct',
   'mistralai/mistral-large',
-  'deepseek/deepseek-chat-v3-0324',
 ]
+
+// ─── Global defaults (baked in at build time via .env) ───────────────────────
+// API keys are server-side only. Only provider/model defaults are in the bundle.
+// Admin settings in localStorage always take precedence.
+
+const ENV_DEFAULT_PROVIDER = (import.meta.env.VITE_DEFAULT_PROVIDER || '') as LLMProvider | ''
+const ENV_DEFAULT_MODEL = import.meta.env.VITE_DEFAULT_MODEL || ''
+
+// Dev-only keys (never used in production builds)
+const DEV_KEYS: Record<string, string> = {
+  claude:     import.meta.env.VITE_ANTHROPIC_API_KEY || '',
+  openai:     import.meta.env.VITE_OPENAI_KEY        || '',
+  gemini:     import.meta.env.VITE_GEMINI_KEY        || '',
+  openrouter: import.meta.env.VITE_OPENROUTER_KEY    || '',
+}
 
 // ─── Config helpers ──────────────────────────────────────────────────────────
 
 export function getProviderConfig(): ProviderConfig {
-  const provider = (localStorage.getItem('fp_llm_provider') || 'claude') as LLMProvider
-  const apiKey = localStorage.getItem(`fp_${provider}_key`) || ''
-  const model = localStorage.getItem(`fp_${provider}_model`) || DEFAULT_MODELS[provider]
+  const provider = (localStorage.getItem('fp_llm_provider') || ENV_DEFAULT_PROVIDER || 'claude') as LLMProvider
+  // apiKey: localStorage (admin override) → dev key → empty (production uses proxy)
+  const apiKey = localStorage.getItem(`fp_${provider}_key`) || (import.meta.env.DEV ? DEV_KEYS[provider] : '') || ''
+  const model = localStorage.getItem(`fp_${provider}_model`) || ENV_DEFAULT_MODEL || DEFAULT_MODELS[provider]
   return { provider, apiKey, model }
 }
 
@@ -75,22 +88,25 @@ function extractJson(text: string): string {
 const isDev = import.meta.env.DEV
 
 async function callClaude(userMessage: string): Promise<string> {
-  const url = isDev ? 'https://api.anthropic.com/v1/messages' : '/api/chat'
+  const storedKey = localStorage.getItem('fp_claude_key')
   const headers: Record<string, string> = { 'Content-Type': 'application/json' }
 
-  if (isDev) {
+  let url: string
+  if (storedKey) {
+    // Admin has a custom key → call Anthropic directly
+    url = 'https://api.anthropic.com/v1/messages'
+    headers['x-api-key'] = storedKey
+    headers['anthropic-version'] = '2023-06-01'
+    headers['anthropic-dangerous-direct-browser-access'] = 'true'
+  } else if (isDev) {
+    url = 'https://api.anthropic.com/v1/messages'
     const key = import.meta.env.VITE_ANTHROPIC_API_KEY
     if (key) headers['x-api-key'] = key
     headers['anthropic-version'] = '2023-06-01'
     headers['anthropic-dangerous-direct-browser-access'] = 'true'
-  }
-
-  // Check if a custom Claude API key is stored in admin settings
-  const storedKey = localStorage.getItem('fp_claude_key')
-  if (storedKey) {
-    headers['x-api-key'] = storedKey
-    headers['anthropic-version'] = '2023-06-01'
-    headers['anthropic-dangerous-direct-browser-access'] = 'true'
+  } else {
+    // Production without custom key → use server-side proxy
+    url = '/api/chat'
   }
 
   const model = localStorage.getItem('fp_claude_model') || DEFAULT_MODELS.claude
@@ -119,14 +135,21 @@ async function callClaude(userMessage: string): Promise<string> {
 }
 
 async function callOpenAI(userMessage: string, config: ProviderConfig): Promise<string> {
-  if (!config.apiKey) throw new Error('OpenAI API-Key fehlt. Bitte in den Admin-Einstellungen hinterlegen.')
+  const headers: Record<string, string> = { 'Content-Type': 'application/json' }
+  let url: string
 
-  const response = await fetch('https://api.openai.com/v1/chat/completions', {
+  if (!isDev && !config.apiKey) {
+    url = '/api/chat'
+    headers['x-fp-provider'] = 'openai'
+  } else {
+    if (!config.apiKey) throw new Error('OpenAI API-Key fehlt. Bitte in den Admin-Einstellungen hinterlegen.')
+    url = 'https://api.openai.com/v1/chat/completions'
+    headers['Authorization'] = `Bearer ${config.apiKey}`
+  }
+
+  const response = await fetch(url, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${config.apiKey}`,
-    },
+    headers,
     body: JSON.stringify({
       model: config.model,
       max_tokens: 2000,
@@ -179,16 +202,23 @@ async function callGemini(userMessage: string, config: ProviderConfig): Promise<
 }
 
 async function callOpenRouter(userMessage: string, config: ProviderConfig): Promise<string> {
-  if (!config.apiKey) throw new Error('OpenRouter API-Key fehlt. Bitte in den Admin-Einstellungen hinterlegen.')
+  const headers: Record<string, string> = { 'Content-Type': 'application/json' }
+  let url: string
 
-  const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+  if (!isDev && !config.apiKey) {
+    url = '/api/chat'
+    headers['x-fp-provider'] = 'openrouter'
+  } else {
+    if (!config.apiKey) throw new Error('OpenRouter API-Key fehlt. Bitte in den Admin-Einstellungen hinterlegen.')
+    url = 'https://openrouter.ai/api/v1/chat/completions'
+    headers['Authorization'] = `Bearer ${config.apiKey}`
+    headers['HTTP-Referer'] = 'https://foerderpilot.mmind.space'
+    headers['X-Title'] = 'Förderpilot'
+  }
+
+  const response = await fetch(url, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${config.apiKey}`,
-      'HTTP-Referer': 'https://foerderpilot.mmind.space',
-      'X-Title': 'Förderpilot',
-    },
+    headers,
     body: JSON.stringify({
       model: config.model,
       max_tokens: 2000,

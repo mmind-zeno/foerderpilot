@@ -12,9 +12,8 @@ import DatenschutzModal from './components/DatenschutzModal'
 import ConsentModal, { hasConsent } from './components/ConsentModal'
 import AdminPanel from './components/AdminPanel'
 import mmindLogo from './assets/logo_mmind.svg'
-import erasmusLogo from './assets/logo-erasmus.svg'
 
-const APP_VERSION = '1.9.0'
+const APP_VERSION = '1.13.0'
 const SESSION_KEY = 'foerderpilot_last_result'
 const SESSION_INPUT_KEY = 'foerderpilot_last_input'
 
@@ -263,19 +262,6 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-col gap-4 text-[12px] text-[#B0ADA5]">
 
-            {/* Erasmus+ Hinweis */}
-            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 py-3 px-4 bg-[#F0EDE6] rounded-xl">
-              <a href="https://erasmus-plus.ec.europa.eu/" target="_blank" rel="noopener noreferrer"
-                className="shrink-0 opacity-80 hover:opacity-100 transition-opacity">
-                <img src={erasmusLogo} alt="Erasmus+" className="h-[28px] w-auto" />
-              </a>
-              <p className="text-[11px] text-[#6B6860] text-center sm:text-left leading-snug">
-                Dieses Projekt wurde im Rahmen des{' '}
-                <strong className="text-[#1A1A1A]">Erasmus+ Programms</strong> der Europäischen Union gefördert.
-                Der Inhalt gibt ausschliesslich die Ansicht der Autoren wieder; die Europäische Kommission übernimmt keine Verantwortung für die Verwendung der enthaltenen Informationen.
-              </p>
-            </div>
-
             {/* Bottom row */}
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
               <div className="flex items-center gap-3">
@@ -302,10 +288,14 @@ export default function App() {
                   Datenschutz & KI-Hinweis
                 </button>
                 <span className="opacity-30">·</span>
-                <a href="https://www.llv.li/de/unternehmen/finanzierung-foerderung"
-                  target="_blank" rel="noopener noreferrer"
+                <a href="https://mmind.ai/datenschutz" target="_blank" rel="noopener noreferrer"
                   className="hover:text-[#0D4F6B] transition-colors">
-                  Amt für Volkswirtschaft FL
+                  Datenschutzerklärung
+                </a>
+                <span className="opacity-30">·</span>
+                <a href="https://mmind.ai/impressum" target="_blank" rel="noopener noreferrer"
+                  className="hover:text-[#0D4F6B] transition-colors">
+                  Impressum
                 </a>
                 <span className="opacity-30">·</span>
                 <span>Daten: März 2026 – Ohne Gewähr</span>

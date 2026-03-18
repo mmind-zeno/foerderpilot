@@ -35,10 +35,38 @@ The pre-filtering in `lib/preFilter.ts` is critical for cost/speed: it scores ea
 
 ### LLM Integration (`lib/api.ts`)
 
-- **Default provider:** Claude (`claude-sonnet-4-20250514`)
-- **Alternate providers:** OpenAI, Gemini, OpenRouter (configurable via Admin Panel at `/#admin`)
+Supported providers: Claude, OpenAI, Gemini, OpenRouter.
+
+#### Provider/Key priority (highest → lowest)
+
+| Priority | Source | Who sets it |
+|----------|--------|-------------|
+| 1 | `localStorage["fp_llm_provider"]` + `localStorage["fp_<provider>_key"]` | Admin via `/#admin` panel (browser-local only) |
+| 2 | `VITE_DEFAULT_PROVIDER` + `VITE_<PROVIDER>_KEY` in `app/.env` | Developer at build time (affects all users) |
+| 3 | Hardcoded fallback: `claude` via `/api/chat` proxy | Code default |
+
+#### Current production config (`app/.env`)
+- **Provider:** OpenRouter
+- **Model:** `google/gemini-2.0-flash-001`
+- **Key:** `VITE_OPENROUTER_KEY` (baked into the JS bundle)
+
+To change the global default: edit `app/.env`, rebuild, and deploy.
+
+#### User roles
+
+| User type | LLM config | Can change settings |
+|-----------|-----------|---------------------|
+| Normal user | Build-default (OpenRouter/Gemini) | No |
+| Admin (`/#admin`) | Can override provider/model/key — stored in **own browser's localStorage only** | Yes, but only affects their own browser |
+
+#### Call routing per provider
+
+- **OpenRouter / OpenAI / Gemini:** Frontend calls provider API directly (key in bundle)
+- **Claude without stored key:** Frontend → `/api/chat` proxy (port 3003) → Anthropic (key injected server-side via `ANTHROPIC_API_KEY` env var)
+- **Claude with stored admin key:** Frontend → Anthropic API directly (bypasses proxy)
+
+#### Other notes
 - **Dev mode:** Calls Anthropic directly using `VITE_ANTHROPIC_API_KEY` from `.env`
-- **Production:** Frontend calls `/api/chat` → Nginx → Docker proxy (port 3003) → Anthropic API (key injected server-side)
 - The LLM must return **JSON only** (no markdown). `api.ts` strips code fences and retries once on failure.
 
 ### State Management
@@ -54,10 +82,12 @@ All state lives in `App.tsx`. No external state library. Key state:
 Browser → Nginx (443 SSL)
   /           → /opt/foerderpilot/static/index.html
   /api/chat   → localhost:3003 (Docker: deploy/proxy/server.js)
-                  → api.anthropic.com (API key injected here)
+                  → api.anthropic.com (only used when provider=claude)
 ```
 
 Deploy: `scp dist/index.html hetzner:/opt/foerderpilot/static/index.html`
+
+**Before deploying:** ensure `app/.env` exists with correct provider/key. Env vars are baked into the build — a missing `.env` means the fallback (Claude proxy) is used.
 
 ### Key Files
 
