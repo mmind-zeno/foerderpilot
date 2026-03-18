@@ -15,9 +15,8 @@ export default function DatenschutzModal({ onClose }: Props) {
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 bg-[#0D4F6B]/10 rounded-xl flex items-center justify-center">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M9 1.5L2.25 4.5V9C2.25 12.45 5.22 15.69 9 16.5C12.78 15.69 15.75 12.45 15.75 9V4.5L9 1.5Z"
-                  stroke="#0D4F6B" strokeWidth="1.4" fill="#0D4F6B" fillOpacity="0.1" />
-                <path d="M9 7V10M9 11.5V12" stroke="#0D4F6B" strokeWidth="1.5" strokeLinecap="round" />
+                <path d="M9 1.5L2.5 4.5V9C2.5 12.5 5.4 15.5 9 16.5C12.6 15.5 15.5 12.5 15.5 9V4.5L9 1.5Z" stroke="#0D4F6B" strokeWidth="1.4" strokeLinejoin="round"/>
+                <path d="M6 9L7.8 11L12 7" stroke="#0D4F6B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
             <h2 className="font-headline text-lg font-semibold text-[#1A1A1A]">
@@ -29,7 +28,7 @@ export default function DatenschutzModal({ onClose }: Props) {
             className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-[#EAE8E4] transition-colors text-[#9B998F]"
           >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              <path d="M2 2L12 12M12 2L2 12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
             </svg>
           </button>
         </div>
@@ -44,7 +43,7 @@ export default function DatenschutzModal({ onClose }: Props) {
               Einsatz von Künstlicher Intelligenz
             </h3>
             <p className="text-[#6B6860]">
-              Förderpilot nutzt <strong className="text-[#1A1A1A]">Claude AI von Anthropic</strong> (claude.ai),
+              Förderpilot nutzt ein <strong className="text-[#1A1A1A]">Large Language Model (LLM)</strong>,
               um deine Situationsbeschreibung auszuwerten und passende Förderungen zu empfehlen.
               Die Ergebnisse sind KI-generierte Empfehlungen – keine Rechts- oder Beratungsleistung.
             </p>
@@ -56,8 +55,8 @@ export default function DatenschutzModal({ onClose }: Props) {
             <ul className="space-y-2 text-[#6B6860]">
               <li className="flex gap-2">
                 <span className="text-[#0D4F6B] mt-0.5">→</span>
-                <span><strong className="text-[#1A1A1A]">Deine Texteingabe</strong> wird zusammen mit den Förderdaten an die
-                Anthropic API gesendet, um passende Förderungen zu identifizieren.</span>
+                <span><strong className="text-[#1A1A1A]">Deine Texteingabe</strong> wird zusammen mit den Förderdaten an eine
+                KI-API gesendet, um passende Förderungen zu identifizieren.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#0D4F6B] mt-0.5">→</span>
@@ -67,10 +66,7 @@ export default function DatenschutzModal({ onClose }: Props) {
               </li>
               <li className="flex gap-2">
                 <span className="text-[#0D4F6B] mt-0.5">→</span>
-                <span>Anthropic verarbeitet die Daten gemäss ihrer{' '}
-                  <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener noreferrer"
-                    className="text-[#0D4F6B] underline hover:text-[#E8530A]">Datenschutzrichtlinie</a>.
-                </span>
+                <span>Der jeweilige KI-Anbieter verarbeitet die Daten gemäss seiner eigenen Datenschutzrichtlinie.</span>
               </li>
             </ul>
           </section>

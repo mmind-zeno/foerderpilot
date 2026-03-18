@@ -91,7 +91,7 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
                 <>
                   Förderungen finden
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                    <path d="M2 7.5H13M9 3L13 7.5L9 12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M3 7.5H12M8.5 4L12 7.5L8.5 11" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </>
               )}
@@ -101,7 +101,7 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
 
         {/* KI-Hinweis */}
         <p className="text-center text-[12px] text-[#B0ADA5] mt-2.5">
-          Eingabe wird via KI (Claude AI) analysiert.{' '}
+          Eingabe wird via KI (LLM) analysiert.{' '}
           <button onClick={onDatenschutz} className="underline hover:text-[#0D4F6B] transition-colors">
             Datenschutz & Disclaimer
           </button>
@@ -134,7 +134,9 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
             {
               icon: (
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1L10 6H15L11 9L12.5 14L8 11L3.5 14L5 9L1 6H6L8 1Z" fill="currentColor" />
+                  <path d="M2 5L8 2L14 5L8 8L2 5Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/>
+                  <path d="M2 8L8 11L14 8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 11L8 14L14 11" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               ),
               text: '103 Förderungen erfasst',
@@ -142,7 +144,8 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
             {
               icon: (
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 8.5L6 12.5L14 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M8 1.5L2 4.5V9C2 12 4.7 14.5 8 15.5C11.3 14.5 14 12 14 9V4.5L8 1.5Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/>
+                  <path d="M5.5 8.5L7 10L10.5 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               ),
               text: 'Web-verifiziert März 2026',
@@ -150,11 +153,10 @@ export default function Hero({ onSubmit, isLoading, onDatenschutz }: Props) {
             {
               icon: (
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="1.5" />
-                  <path d="M8 5V8.5L10.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  <path d="M9.5 1.5L4 8.5H8.5L6.5 14.5L13 7.5H8.5L9.5 1.5Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" strokeLinecap="round"/>
                 </svg>
               ),
-              text: 'KI powered by Claude',
+              text: 'KI-gestützte Analyse',
             },
           ].map(({ icon, text }) => (
             <div key={text} className="flex items-center gap-2.5 text-[13px] text-[#9B998F]">

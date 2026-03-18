@@ -23,7 +23,7 @@ export default function ResultCards({ result, onReset, userInput, onDatenschutz 
         <div className="relative flex items-start gap-3">
           <div className="mt-0.5 shrink-0 w-9 h-9 rounded-full bg-white/15 flex items-center justify-center">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M8 1.5L10 6H14.5L11 8.5L12.5 13L8 10.5L3.5 13L5 8.5L1.5 6H6L8 1.5Z" fill="white" opacity="0.9" />
+              <path d="M8 1.5L9.8 6.5H15.2L10.9 9.5L12.5 14.5L8 11.5L3.5 14.5L5.1 9.5L0.8 6.5H6.2L8 1.5Z" stroke="white" strokeWidth="1.4" strokeLinejoin="round" strokeLinecap="round"/>
             </svg>
           </div>
           <p className="text-[15px] leading-relaxed text-white/95">{result.intro}</p>
@@ -51,7 +51,7 @@ export default function ResultCards({ result, onReset, userInput, onDatenschutz 
           className="text-sm text-[#6B6860] hover:text-[#E8530A] transition-colors duration-200 flex items-center gap-1.5 border border-[#D4D1CB] hover:border-[#E8530A] px-3 py-1.5 rounded-lg"
         >
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-            <path d="M6 1L1 6.5M1 6.5L6 12M1 6.5H12" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+            <path d="M5 2L1 6.5L5 11M1 6.5H12" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
           Neue Suche
         </button>
@@ -105,7 +105,7 @@ export default function ResultCards({ result, onReset, userInput, onDatenschutz 
               Mehr erfahren & Antrag stellen
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                 className="transition-transform group-hover:translate-x-0.5">
-                <path d="M2 6.5H11M7 2.5L11 6.5L7 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M2 6.5H11M7.5 3L11 6.5L7.5 10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </a>
           </div>
@@ -117,8 +117,9 @@ export default function ResultCards({ result, onReset, userInput, onDatenschutz 
         <div className="flex gap-3">
           <div className="shrink-0 mt-0.5 w-9 h-9 bg-[#0D4F6B]/10 rounded-xl flex items-center justify-center">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <circle cx="8" cy="8" r="7" stroke="#0D4F6B" strokeWidth="1.4" />
-              <path d="M8 5V8.5M8 10.5V11" stroke="#0D4F6B" strokeWidth="1.8" strokeLinecap="round" />
+              <circle cx="8" cy="8" r="6.5" stroke="#0D4F6B" strokeWidth="1.4"/>
+              <path d="M8 7.5V11" stroke="#0D4F6B" strokeWidth="1.5" strokeLinecap="round"/>
+              <path d="M8 5.5V5.6" stroke="#0D4F6B" strokeWidth="2.2" strokeLinecap="round"/>
             </svg>
           </div>
           <div>
@@ -134,8 +135,9 @@ export default function ResultCards({ result, onReset, userInput, onDatenschutz 
           <div className="flex gap-3">
             <div className="shrink-0 mt-0.5 text-amber-500">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M9 1L16.5 15H1.5L9 1Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-                <path d="M9 7V10M9 12.5V13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                <path d="M9 2L16.5 15H1.5L9 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
+                <path d="M9 8V11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                <path d="M9 13V13.1" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
               </svg>
             </div>
             <p className="text-[14px] text-amber-900 leading-relaxed">{result.hinweis}</p>
@@ -168,7 +170,7 @@ export default function ResultCards({ result, onReset, userInput, onDatenschutz 
           >
             Kostenlose Erstberatung bei mmind.ai
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
           <p className="text-[11px] text-white/40 mt-5">

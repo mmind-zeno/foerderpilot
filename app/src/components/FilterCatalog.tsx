@@ -126,9 +126,9 @@ export default function FilterCatalog() {
 
           {/* Search */}
           <div className="relative mb-3">
-            <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-[#9B998F]" width="15" height="15" viewBox="0 0 16 16" fill="none">
-              <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" strokeWidth="1.4" />
-              <path d="M10 10L13.5 13.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+            <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-[#9B998F]" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" strokeWidth="1.4"/>
+              <path d="M10 10L13 13" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
             </svg>
             <input
               type="text"
@@ -226,7 +226,7 @@ export default function FilterCatalog() {
                 className="text-xs text-[#6B6860] hover:text-[#E8530A] transition-colors flex items-center gap-1"
               >
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+                  <path d="M1.5 1.5L8.5 8.5M8.5 1.5L1.5 8.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
                 </svg>
                 Zurücksetzen
               </button>
@@ -300,7 +300,7 @@ export default function FilterCatalog() {
                             </span>
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                               className={`text-[#9B998F] transition-transform duration-200 shrink-0 ${expanded === f.id ? 'rotate-180' : ''}`}>
-                              <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                              <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                           </div>
                         </div>
@@ -356,8 +356,8 @@ export default function FilterCatalog() {
                               <a href={`mailto:${f.kontakt_email}`}
                                 className="flex items-center gap-2 text-sm text-[#0D4F6B] hover:text-[#E8530A] transition-colors font-medium">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                  <rect x="1" y="2.5" width="12" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.3" />
-                                  <path d="M1 4l6 4 6-4" stroke="currentColor" strokeWidth="1.3" />
+                                  <rect x="1" y="2.5" width="12" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.3"/>
+                                  <path d="M1 5L7 9L13 5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
                                 </svg>
                                 {f.kontakt_email}
                               </a>
@@ -366,7 +366,7 @@ export default function FilterCatalog() {
                               <a href={`tel:${f.kontakt_tel}`}
                                 className="flex items-center gap-2 text-sm text-[#0D4F6B] hover:text-[#E8530A] transition-colors font-medium">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                  <path d="M2 2h3l1.5 3.5-2 1.2A8.5 8.5 0 007.3 10l1.2-2L12 9.5V12a1 1 0 01-1 1C5 13 1 9 1 3a1 1 0 011-1z" stroke="currentColor" strokeWidth="1.3" />
+                                  <path d="M2 2h3l1.5 3.5-2 1.2A8.5 8.5 0 007.3 10l1.2-2L12 9.5V12a1 1 0 01-1 1C5 13 1 9 1 3a1 1 0 011-1z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
                                 </svg>
                                 {f.kontakt_tel}
                               </a>
@@ -375,7 +375,7 @@ export default function FilterCatalog() {
                               <a href={f.antrag_url} target="_blank" rel="noopener noreferrer"
                                 className="flex items-center gap-2 text-sm font-semibold text-white bg-[#E8530A] hover:bg-[#c4440a] px-4 py-1.5 rounded-lg transition-colors">
                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-                                  <path d="M2 11L11 2M11 2H6M11 2v5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                                  <path d="M2 11L11 2M11 2H6.5M11 2V6.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                                 Direkt zum Antrag
                               </a>
@@ -399,7 +399,7 @@ export default function FilterCatalog() {
                           Website besuchen
                           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                             className="transition-transform group-hover:translate-x-0.5">
-                            <path d="M1 11L11 1M11 1H6M11 1v5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M1.5 10.5L10 2M10 2H6M10 2V6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                           </svg>
                         </a>
                       </div>

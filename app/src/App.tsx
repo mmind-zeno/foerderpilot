@@ -7,12 +7,14 @@ import Hero from './components/Hero'
 import HeroBanner from './components/HeroBanner'
 import ResultCards from './components/ResultCards'
 import FilterCatalog from './components/FilterCatalog'
-import LoadingSkeleton from './components/LoadingSkeleton'
+import LoadingView from './components/LoadingView'
 import DatenschutzModal from './components/DatenschutzModal'
+import ConsentModal, { hasConsent } from './components/ConsentModal'
 import AdminPanel from './components/AdminPanel'
 import mmindLogo from './assets/logo_mmind.svg'
+import erasmusLogo from './assets/logo-erasmus.svg'
 
-const APP_VERSION = '1.7.0'
+const APP_VERSION = '1.9.0'
 const SESSION_KEY = 'foerderpilot_last_result'
 const SESSION_INPUT_KEY = 'foerderpilot_last_input'
 
@@ -39,6 +41,7 @@ export default function App() {
   const [result, setResult] = useState<ApiResponse | null>(stored?.result ?? null)
   const [userInput, setUserInput] = useState(stored?.input ?? '')
   const [error, setError] = useState<string | null>(null)
+  const [consentGiven, setConsentGiven] = useState(() => hasConsent())
   const [showDatenschutz, setShowDatenschutz] = useState(false)
   const [showAdmin, setShowAdmin] = useState(() => window.location.hash === '#admin')
 
@@ -87,6 +90,9 @@ export default function App() {
   return (
     <div className="min-h-screen app-root font-body">
 
+      {/* Consent Modal (first visit) */}
+      {!consentGiven && <ConsentModal onAccept={() => setConsentGiven(true)} />}
+
       {/* Admin Panel */}
       {showAdmin && <AdminPanel onExit={handleAdminExit} version={APP_VERSION} />}
 
@@ -108,7 +114,7 @@ export default function App() {
               <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center shadow-md shrink-0"
                 style={{ background: 'linear-gradient(135deg, #0D4F6B 0%, #1a6d8f 100%)' }}>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1.5L10.2 6.5H15.5L11.2 9.5L13 14.5L8 11.5L3 14.5L4.8 9.5L0.5 6.5H5.8L8 1.5Z" fill="white" />
+                  <path d="M8 1.5L9.8 6.5H15.2L10.9 9.5L12.5 14.5L8 11.5L3.5 14.5L5.1 9.5L0.8 6.5H6.2L8 1.5Z" stroke="white" strokeWidth="1.4" strokeLinejoin="round" strokeLinecap="round"/>
                 </svg>
               </div>
               <div>
@@ -129,7 +135,10 @@ export default function App() {
                     : 'text-[#9B998F] hover:text-[#1A1A1A]'
                 }`}
               >
-                🔍 KI-Suche
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" className="inline-block mr-1.5 -mt-px">
+                  <circle cx="5.5" cy="5.5" r="3.8" stroke="currentColor" strokeWidth="1.4"/>
+                  <path d="M8.5 8.5L11 11" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+                </svg>KI-Suche
               </button>
               <button
                 onClick={() => setTab('catalog')}
@@ -139,21 +148,29 @@ export default function App() {
                     : 'text-[#9B998F] hover:text-[#1A1A1A]'
                 }`}
               >
-                📋 Alle Förderungen
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" className="inline-block mr-1.5 -mt-px">
+                  <path d="M2 3.5H11M2 6.5H11M2 9.5H7.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+                </svg>Alle Förderungen
               </button>
             </div>
 
-            {/* Datenschutz (desktop only) */}
-            <button
-              onClick={() => setShowDatenschutz(true)}
-              className="text-[12px] text-[#B0ADA5] hover:text-[#0D4F6B] transition-colors hidden sm:flex items-center gap-1.5"
-            >
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M6 1L1.5 3V6C1.5 8.3 3.5 10.46 6 11C8.5 10.46 10.5 8.3 10.5 6V3L6 1Z"
-                  stroke="currentColor" strokeWidth="1.2" fill="none" />
-              </svg>
-              Datenschutz
-            </button>
+            {/* Right side: mmind logo + Datenschutz */}
+            <div className="flex items-center gap-3 sm:gap-4">
+              <a href="https://mmind.ai" target="_blank" rel="noopener noreferrer"
+                className="opacity-55 hover:opacity-90 transition-opacity">
+                <img src={mmindLogo} alt="mmind.ai" className="h-[16px] sm:h-[18px] w-auto" />
+              </a>
+              <button
+                onClick={() => setShowDatenschutz(true)}
+                className="text-[12px] text-[#B0ADA5] hover:text-[#0D4F6B] transition-colors hidden sm:flex items-center gap-1.5"
+              >
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M6 1L1.5 3V6C1.5 8.3 3.5 10.5 6 11C8.5 10.5 10.5 8.3 10.5 6V3L6 1Z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round"/>
+                  <path d="M4 6L5.5 7.5L8 4.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                Datenschutz
+              </button>
+            </div>
           </div>
 
           {/* Mobile Tab Bar (hidden on sm+) */}
@@ -167,8 +184,8 @@ export default function App() {
               }`}
             >
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <circle cx="6" cy="6" r="4.5" stroke="currentColor" strokeWidth="1.5" />
-                <path d="M9.5 9.5L12.5 12.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                <circle cx="5.5" cy="5.5" r="4" stroke="currentColor" strokeWidth="1.5"/>
+                <path d="M9 9L12 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
               KI-Suche
             </button>
@@ -182,9 +199,7 @@ export default function App() {
               }`}
             >
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <rect x="1" y="2" width="12" height="2" rx="1" fill="currentColor" />
-                <rect x="1" y="6" width="12" height="2" rx="1" fill="currentColor" />
-                <rect x="1" y="10" width="8" height="2" rx="1" fill="currentColor" />
+                <path d="M2 3.5H12M2 7H12M2 10.5H8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
               Alle Förderungen
             </button>
@@ -207,8 +222,9 @@ export default function App() {
               <div className="bg-red-50 border border-red-200 rounded-2xl p-5 mb-6 animate-fade-in">
                 <div className="flex gap-3">
                   <svg className="shrink-0 mt-0.5 text-red-400" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <circle cx="9" cy="9" r="8" stroke="currentColor" strokeWidth="1.4" />
-                    <path d="M9 5V9.5M9 12V12.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                    <circle cx="9" cy="9" r="7.5" stroke="currentColor" strokeWidth="1.5"/>
+                    <path d="M9 5.5V10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                    <path d="M9 12.5V12.6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
                   </svg>
                   <div>
                     <p className="text-sm font-semibold text-red-800 mb-1">Fehler bei der KI-Analyse</p>
@@ -228,14 +244,7 @@ export default function App() {
               <Hero onSubmit={handleSearch} isLoading={false} onDatenschutz={() => setShowDatenschutz(true)} />
             )}
             {view === 'loading' && (
-              <div className="max-w-2xl mx-auto">
-                <div className="rounded-xl p-4 mb-6 animate-fade-in"
-                  style={{ background: 'rgba(13,79,107,0.06)', borderLeft: '3px solid #0D4F6B' }}>
-                  <p className="text-[11px] text-[#0D4F6B] font-bold uppercase tracking-widest mb-1">KI analysiert</p>
-                  <p className="text-sm text-[#1A1A1A] italic">"{userInput}"</p>
-                </div>
-                <LoadingSkeleton />
-              </div>
+              <LoadingView userInput={userInput} />
             )}
             {view === 'results' && result && (
               <ResultCards
@@ -252,38 +261,55 @@ export default function App() {
       {/* Footer */}
       <footer className="border-t border-[#D4D1CB] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-[#B0ADA5]">
-            <div className="flex items-center gap-3">
-              <div className="w-5 h-5 rounded-md flex items-center justify-center shrink-0"
-                style={{ background: 'linear-gradient(135deg, #0D4F6B, #1a6d8f)' }}>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
-                  <path d="M5.5 1L7 4.5H10.5L7.5 6.5L8.5 10L5.5 8L2.5 10L3.5 6.5L0.5 4.5H4L5.5 1Z" fill="white" />
-                </svg>
-              </div>
-              <span className="font-semibold text-[#6B6860]">Förderpilot</span>
-              <span className="opacity-30">–</span>
-              <span>powered by</span>
-              <a href="https://mmind.ai" target="_blank" rel="noopener noreferrer"
-                className="opacity-70 hover:opacity-100 transition-opacity">
-                <img src={mmindLogo} alt="mmind.ai" className="h-[14px] w-auto" />
+          <div className="flex flex-col gap-4 text-[12px] text-[#B0ADA5]">
+
+            {/* Erasmus+ Hinweis */}
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 py-3 px-4 bg-[#F0EDE6] rounded-xl">
+              <a href="https://erasmus-plus.ec.europa.eu/" target="_blank" rel="noopener noreferrer"
+                className="shrink-0 opacity-80 hover:opacity-100 transition-opacity">
+                <img src={erasmusLogo} alt="Erasmus+" className="h-[28px] w-auto" />
               </a>
-              <span className="bg-[#EAE8E4] text-[#9B998F] text-[10px] px-1.5 py-0.5 rounded font-mono">
-                v{APP_VERSION}
-              </span>
+              <p className="text-[11px] text-[#6B6860] text-center sm:text-left leading-snug">
+                Dieses Projekt wurde im Rahmen des{' '}
+                <strong className="text-[#1A1A1A]">Erasmus+ Programms</strong> der Europäischen Union gefördert.
+                Der Inhalt gibt ausschliesslich die Ansicht der Autoren wieder; die Europäische Kommission übernimmt keine Verantwortung für die Verwendung der enthaltenen Informationen.
+              </p>
             </div>
-            <div className="flex flex-wrap items-center gap-3 justify-center text-center">
-              <button onClick={() => setShowDatenschutz(true)}
-                className="hover:text-[#0D4F6B] transition-colors">
-                Datenschutz & KI-Hinweis
-              </button>
-              <span className="opacity-30">·</span>
-              <a href="https://www.llv.li/de/unternehmen/finanzierung-foerderung"
-                target="_blank" rel="noopener noreferrer"
-                className="hover:text-[#0D4F6B] transition-colors">
-                Amt für Volkswirtschaft FL
-              </a>
-              <span className="opacity-30">·</span>
-              <span>Daten: März 2026 – Ohne Gewähr</span>
+
+            {/* Bottom row */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded-md flex items-center justify-center shrink-0"
+                  style={{ background: 'linear-gradient(135deg, #0D4F6B, #1a6d8f)' }}>
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M5.5 1.5L6.9 4.8H10.3L7.5 6.8L8.5 10L5.5 8L2.5 10L3.5 6.8L0.7 4.8H4.1L5.5 1.5Z" stroke="white" strokeWidth="1.2" strokeLinejoin="round" strokeLinecap="round"/>
+                  </svg>
+                </div>
+                <span className="font-semibold text-[#6B6860]">Förderpilot</span>
+                <span className="opacity-30">–</span>
+                <span>powered by</span>
+                <a href="https://mmind.ai" target="_blank" rel="noopener noreferrer"
+                  className="opacity-70 hover:opacity-100 transition-opacity">
+                  <img src={mmindLogo} alt="mmind.ai" className="h-[14px] w-auto" />
+                </a>
+                <span className="bg-[#EAE8E4] text-[#9B998F] text-[10px] px-1.5 py-0.5 rounded font-mono">
+                  v{APP_VERSION}
+                </span>
+              </div>
+              <div className="flex flex-wrap items-center gap-3 justify-center text-center">
+                <button onClick={() => setShowDatenschutz(true)}
+                  className="hover:text-[#0D4F6B] transition-colors">
+                  Datenschutz & KI-Hinweis
+                </button>
+                <span className="opacity-30">·</span>
+                <a href="https://www.llv.li/de/unternehmen/finanzierung-foerderung"
+                  target="_blank" rel="noopener noreferrer"
+                  className="hover:text-[#0D4F6B] transition-colors">
+                  Amt für Volkswirtschaft FL
+                </a>
+                <span className="opacity-30">·</span>
+                <span>Daten: März 2026 – Ohne Gewähr</span>
+              </div>
             </div>
           </div>
         </div>
